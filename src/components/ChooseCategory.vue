@@ -33,9 +33,9 @@ const quiz = reactive({
 
 <template>
   <header>
-    <h3 class="text-5xl text-center">Choose a category</h3>
+    <h3 class="text-4xl text-center mb-5">Choose a category</h3>
   </header>
-  <main>
+  <main class="pt-5">
     <div class="categories flex flex-wrap card p-2">
       <Category :key="category.key" v-for="category in quiz.categories" :title="category.value" />
     </div>
