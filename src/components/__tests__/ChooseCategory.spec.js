@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import ChooseCategory from '../ChooseCategory.vue'
+import ChooseCategory from '../../views/ChooseCategory.vue'
 
 describe('ChooseCategory', () => {
   let wrapper
@@ -23,11 +23,11 @@ describe('ChooseCategory', () => {
   it('render all six quiz categories', () => {
     const categories = wrapper.vm.quiz.categories
 
-    expect(categories[0].value).toBe('Film / Series')
-    expect(categories[1].value).toBe('Gastronomy')
-    expect(categories[2].value).toBe('History')
-    expect(categories[3].value).toBe('Science')
-    expect(categories[4].value).toBe('Sport')
-    expect(categories[5].value).toBe('Mixed')
+    expect(categories[0].title).toBe('Film / Series')
+    expect(categories[1].title).toBe('Gastronomy')
+    expect(categories[2].title).toBe('History')
+    expect(categories[3].title).toBe('Science')
+    expect(categories[4].title).toBe('Sport')
+    expect(categories[5].title).toBe('Mixed')
   })
 })

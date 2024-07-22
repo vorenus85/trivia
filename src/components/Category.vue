@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  title: {
+  category: {
     type: String,
     required: true
   }
@@ -9,17 +9,18 @@ defineProps({
 <template>
   <div class="category col-6">
     <div
-      class="category-title ripple text-center p-3 border-round-sm bg-primary font-bold flex-1 cursor-pointer"
+      class="category-title text-primary ripple text-center p-2 border-round-lg border-solid border-primary font-bold flex-1 cursor-pointer min-h-full align-content-center"
     >
-      {{ title }}
+      {{ category }}
     </div>
   </div>
 </template>
 <style scoped lang="scss">
 .category {
-  min-height: 50px;
+  min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.875rem;
 }
 </style>

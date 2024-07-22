@@ -1,43 +1,46 @@
 <script setup>
-import Category from './Category.vue'
+import Category from '../components/Category.vue'
+import Title from '../components/Title.vue'
 import { reactive } from 'vue'
 const quiz = reactive({
   categories: [
     {
       key: 'film/series',
-      value: 'Film / Series'
+      title: 'Film / Series'
     },
     {
       key: 'gastronomy',
-      value: 'Gastronomy'
+      title: 'Gastronomy'
     },
     {
       key: 'history',
-      value: 'History'
+      title: 'History'
     },
     {
       key: 'science',
-      value: 'Science'
+      title: 'Science'
     },
     {
       key: 'Sport',
-      value: 'Sport'
+      title: 'Sport'
     },
     {
       key: 'mixed',
-      value: 'Mixed'
+      title: 'Mixed'
     }
   ]
 })
 </script>
 
 <template>
-  <header>
-    <h3 class="text-4xl text-center mb-5">Choose a category</h3>
-  </header>
+  <Title :title="`Please choose category`" />
   <main class="pt-5">
     <div class="categories flex flex-wrap card p-2">
-      <Category :key="category.key" v-for="category in quiz.categories" :title="category.value" />
+      <Category
+        :key="category.key"
+        v-for="category in quiz.categories"
+        :category="category.title"
+      />
     </div>
   </main>
 </template>
