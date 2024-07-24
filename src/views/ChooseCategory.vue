@@ -2,6 +2,10 @@
 import Category from '../components/Category.vue'
 import Title from '../components/Title.vue'
 import { reactive } from 'vue'
+import { useTriviaStore } from '../stores/trivia'
+import { pages } from '../constants'
+const triviaStore = useTriviaStore()
+
 const quiz = reactive({
   categories: [
     {
@@ -30,6 +34,19 @@ const quiz = reactive({
     }
   ]
 })
+
+function handleSelectCategory(categoryId) {
+  setCategory(categoryId)
+  showDifficultyPage()
+}
+
+function setCategory(categoryId) {
+  triviaStore.setCategory(categoryId)
+}
+
+function showDifficultyPage() {
+  triviaStore.setPage(pages.difficulty)
+}
 </script>
 
 <template>
@@ -40,6 +57,8 @@ const quiz = reactive({
         :key="category.key"
         v-for="category in quiz.categories"
         :category="category.title"
+        :categoryId="category.key"
+        @on-select-category="handleSelectCategory"
       />
     </div>
   </main>
