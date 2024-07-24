@@ -1,0 +1,88 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Array snapshot tests > matches the array snapshot 1`] = `
+[
+  {
+    "key": "film/series",
+    "title": "Film / Series",
+  },
+  {
+    "key": "gastronomy",
+    "title": "Gastronomy",
+  },
+  {
+    "key": "history",
+    "title": "History",
+  },
+  {
+    "key": "science",
+    "title": "Science",
+  },
+  {
+    "key": "sport",
+    "title": "Sport",
+  },
+  {
+    "key": "mixed",
+    "title": "Mixed",
+  },
+]
+`;
+
+exports[`Categories snapshot tests > matches the array snapshot 1`] = `
+[
+  {
+    "key": "film/series",
+    "title": "Film / Series",
+  },
+  {
+    "key": "gastronomy",
+    "title": "Gastronomy",
+  },
+  {
+    "key": "history",
+    "title": "History",
+  },
+  {
+    "key": "science",
+    "title": "Science",
+  },
+  {
+    "key": "Sport",
+    "title": "Sport",
+  },
+  {
+    "key": "mixed",
+    "title": "Mixed",
+  },
+]
+`;
+
+exports[`Categories tests > quiz categories matches the array snapshot 1`] = `
+[
+  {
+    "key": "film/series",
+    "title": "Film / Series",
+  },
+  {
+    "key": "gastronomy",
+    "title": "Gastronomy",
+  },
+  {
+    "key": "history",
+    "title": "History",
+  },
+  {
+    "key": "science",
+    "title": "Science",
+  },
+  {
+    "key": "Sport",
+    "title": "Sport",
+  },
+  {
+    "key": "mixed",
+    "title": "Mixed",
+  },
+]
+`;
