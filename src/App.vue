@@ -1,13 +1,19 @@
 <script setup>
-import ChooseCategory from './views/ChooseCategory.vue'
+import CategoryList from './views/CategoryList.vue'
 import Header from './components/Header.vue'
+import { useTriviaStore } from '@/stores/trivia'
+const triviaStore = useTriviaStore()
 </script>
 
 <template>
   <div class="centered-content">
     <Header />
     <div class="container ml-auto mr-auto p-3 content">
-      <ChooseCategory />
+      <CategoryList v-if="triviaStore.activePage === 'START'" />
+      <PageDifficulty v-if="triviaStore.activePage === 'DIFFICULTY'" />
+      <PageQuestions v-if="triviaStore.activePage === 'QUESTIONS'" />
+      <PageResult v-if="triviaStore.activePage === 'RESULT'" />
+      <PageDetailedResult v-if="triviaStore.activePage === 'DETAILED_RESULTS'" />
     </div>
   </div>
 </template>

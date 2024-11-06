@@ -3,36 +3,11 @@ import Category from '../components/Category.vue'
 import Title from '../components/Title.vue'
 import { reactive } from 'vue'
 import { useTriviaStore } from '../stores/trivia'
-import { pages } from '../constants'
+import { pages, categories } from '../constants'
 const triviaStore = useTriviaStore()
 
 const quiz = reactive({
-  categories: [
-    {
-      key: 'film/series',
-      title: 'Film / Series'
-    },
-    {
-      key: 'gastronomy',
-      title: 'Gastronomy'
-    },
-    {
-      key: 'history',
-      title: 'History'
-    },
-    {
-      key: 'science',
-      title: 'Science'
-    },
-    {
-      key: 'Sport',
-      title: 'Sport'
-    },
-    {
-      key: 'mixed',
-      title: 'Mixed'
-    }
-  ]
+  categories
 })
 
 function handleSelectCategory(categoryId) {

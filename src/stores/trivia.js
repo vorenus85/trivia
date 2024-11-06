@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useTriviaStore = defineStore('trivia', {
   state: () => ({
-    page: null,
+    page: 'START',
     difficulty: null,
     category: null,
     questions: []
