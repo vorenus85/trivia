@@ -1,0 +1,1 @@
+<template>detailed result</template>

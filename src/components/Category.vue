@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="category col-6">
     <div
-      class="category-title text-primary ripple text-center p-2 border-round-lg border-solid border-primary font-bold flex-1 cursor-pointer min-h-full align-content-center"
+      class="category-title ripple text-center p-2 border-round-lg border-2 border-solid border-primary font-bold flex-1 cursor-pointer min-h-full align-content-center"
       @click="$emit('onSelectCategory', categoryId)"
     >
       {{ category }}

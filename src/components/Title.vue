@@ -1,5 +1,5 @@
 <template>
-  <div class="page-title border-round-xl">
+  <div class="page-title border-round-xl w-full">
     <h3 class="text-xl text-center">{{ title }}</h3>
   </div>
 </template>
@@ -14,7 +14,7 @@ defineProps({
 <style scoped lang="scss">
 .page-title {
   background: #fff;
-  box-shadow: 0px 4px 4px 0px #fbecff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
 
   &:before {
@@ -31,7 +31,7 @@ defineProps({
 }
 
 .page-title h3 {
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
