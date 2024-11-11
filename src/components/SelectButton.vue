@@ -15,16 +15,20 @@ defineProps({
   size: {
     type: String,
     default: 'half'
-  }
+  },
+  value: Boolean
 })
 </script>
 <template>
-  <div class="select-button-wrapper col-6" :class="size === 'half' ? 'col-6' : 'col-12'">
+  <div class="select-button-wrapper" :class="size === 'half' ? 'col-6' : 'col-12'">
     <div
       class="select-button ripple text-center p-2 border-round-lg border-1 border-solid flex-1 cursor-pointer min-h-full flex align-content-center justify-content-center"
       @click="$emit('onSelect', id)"
     >
-      <div class="flex flex-column align-content-center justify-content-center">
+      <div
+        class="flex flex-column align-content-center justify-content-center fadein animation-duration-500"
+        :class="value ? 'skeleton' : ''"
+      >
         <span :class="hint?.length ? 'text-left' : ''">{{ title }}</span>
         <small
           class="pt-2 text-gray-700 font-normal"
@@ -46,7 +50,7 @@ defineProps({
 </template>
 <style scoped lang="scss">
 .select-button-wrapper {
-  min-height: 100px;
+  min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

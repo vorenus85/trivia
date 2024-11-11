@@ -10,11 +10,10 @@ const triviaStore = useTriviaStore()
 function navBack() {
   triviaStore.setPage('DIFFICULTY')
 }
-
 const questions = ref([])
 const activeQuestionIndex = ref(0)
-const activeQuestion = ref({})
-const activeAnswers = ref([])
+const activeQuestion = ref({ question: '' })
+const activeAnswers = ref(['', '', '', ''])
 const loading = ref(true)
 const error = ref(null)
 
@@ -22,24 +21,31 @@ const fetchQuestions = async () => {
   loading.value = true
   const category = triviaStore.selectedCategory
   const difficulty = triviaStore.selectedDifficulty
+
+  const cacheKey = `${triviaStore.selectedCategory}-${triviaStore.selectedDifficulty}`
+  const cachedQuestions = localStorage.getItem(cacheKey)
+
+  if (cachedQuestions) {
+    questions.value = JSON.parse(cachedQuestions)
+    loading.value = false
+    return
+  }
+
   try {
     // https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple
     const apiUrl =
       import.meta.env.VITE_API_URL +
       `?amount=10&category=${category}&difficulty=${difficulty}&type=multiple`
-
-    console.log(apiUrl)
     const response = await fetch(apiUrl)
 
     if (!response.ok) {
-      throw new Error('Failed to load products')
+      throw new Error('Failed to load trivias')
     }
 
     const data = await response.json()
     questions.value = data.results
     triviaStore.setQuestions(data.results)
-
-    console.log(data.results)
+    localStorage.setItem(cacheKey, JSON.stringify(data.results))
   } catch (error) {
     error.value = error.message
   } finally {
@@ -48,13 +54,16 @@ const fetchQuestions = async () => {
 }
 
 function getQuestion(index) {
+  if (!questions.value.length) {
+    return
+  }
+
   activeQuestion.value = questions.value[index]
   activeQuestionIndex.value = index
   const answers = [
     activeQuestion?.value?.correct_answer,
     ...activeQuestion?.value?.incorrect_answers
   ]
-  console.log(answers)
   activeAnswers.value = shuffleAnswers(answers)
 }
 
@@ -79,13 +88,14 @@ onMounted(async () => {
 
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :title="`${activeQuestion?.question}`" class="text-md" />
+  <PageTitle :value="loading" :title="`${activeQuestion.question}`" class="text-md" />
   <main class="pt-5">
     <div class="answers flex flex-wrap card p-1">
       <SelectButton
         :key="answer"
         v-for="answer in activeAnswers"
         :title="answer"
+        :value="loading"
         :id="answer"
         @on-select="handleSelectAnswer"
       />

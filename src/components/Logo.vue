@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">Queezy</div>
+  <div class="logo">Trivia</div>
 </template>
 <style scoped>
 .logo {
