@@ -1,6 +1,6 @@
 <template>
   <div class="page-title border-round-xl w-full">
-    <h3 class="text-center">{{ title }}</h3>
+    <h3 class="text-center" v-html="title"></h3>
   </div>
 </template>
 <script setup>

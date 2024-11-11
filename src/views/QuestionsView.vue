@@ -79,7 +79,7 @@ onMounted(async () => {
 
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :title="activeQuestion?.question" class="text-md" />
+  <PageTitle :title="`${activeQuestion?.question}`" class="text-md" />
   <main class="pt-5">
     <div class="answers flex flex-wrap card p-1">
       <SelectButton
