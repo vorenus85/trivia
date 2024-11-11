@@ -1,0 +1,1119 @@
+{
+  "trivia": {
+    "film_series": [
+      {
+        "question": "Who directed *The Shape of Water*, the 2017 film that won the Academy Award for Best Picture?",
+        "options": [
+          "Guillermo del Toro",
+          "Martin Scorsese",
+          "Alejandro González Iñárritu",
+          "Alfonso Cuarón"
+        ],
+        "correctAnswer": "Guillermo del Toro"
+      },
+      {
+        "question": "Which actress played the lead role of Ripley in the *Alien* film series?",
+        "options": ["Linda Hamilton", "Sigourney Weaver", "Jodie Foster", "Jamie Lee Curtis"],
+        "correctAnswer": "Sigourney Weaver"
+      },
+      {
+        "question": "In *The Matrix*, what is the color of the pill Neo takes to learn the truth about the Matrix?",
+        "options": ["Blue", "Red", "Green", "Yellow"],
+        "correctAnswer": "Red"
+      },
+      {
+        "question": "In *Inception*, which object does Cobb use as a totem to distinguish between dreams and reality?",
+        "options": ["A dice", "A coin", "A spinning top", "A pocket watch"],
+        "correctAnswer": "A spinning top"
+      },
+      {
+        "question": "What is the highest-grossing film franchise of all time as of 2023?",
+        "options": ["Marvel Cinematic Universe", "Star Wars", "Harry Potter", "James Bond"],
+        "correctAnswer": "Marvel Cinematic Universe"
+      },
+      {
+        "question": "Which 1980 film popularized the phrase 'Here’s Johnny!'?",
+        "options": ["Halloween", "The Shining", "Friday the 13th", "Psycho"],
+        "correctAnswer": "The Shining"
+      },
+      {
+        "question": "Who played the role of The Joker in *The Dark Knight*?",
+        "options": ["Joaquin Phoenix", "Jack Nicholson", "Heath Ledger", "Jared Leto"],
+        "correctAnswer": "Heath Ledger"
+      },
+      {
+        "question": "What kind of animal is Rocket in the *Guardians of the Galaxy* films?",
+        "options": ["Raccoon", "Fox", "Squirrel", "Cat"],
+        "correctAnswer": "Raccoon"
+      },
+      {
+        "question": "Which actor starred as Maximus in *Gladiator*?",
+        "options": ["Russell Crowe", "Mel Gibson", "Tom Cruise", "Hugh Jackman"],
+        "correctAnswer": "Russell Crowe"
+      },
+      {
+        "question": "In *Back to the Future*, what speed does the DeLorean need to reach to time travel?",
+        "options": ["60 mph", "70 mph", "88 mph", "100 mph"],
+        "correctAnswer": "88 mph"
+      },
+      {
+        "question": "What 1994 film revitalized John Travolta’s career?",
+        "options": ["Grease", "Pulp Fiction", "Saturday Night Fever", "Face/Off"],
+        "correctAnswer": "Pulp Fiction"
+      },
+      {
+        "question": "Which film series stars Keanu Reeves as an assassin seeking revenge for the death of his dog?",
+        "options": ["The Matrix", "John Wick", "Point Break", "Speed"],
+        "correctAnswer": "John Wick"
+      },
+      {
+        "question": "In the *Harry Potter* series, who killed Dumbledore?",
+        "options": ["Draco Malfoy", "Bellatrix Lestrange", "Lord Voldemort", "Severus Snape"],
+        "correctAnswer": "Severus Snape"
+      },
+      {
+        "question": "Who directed *Schindler's List*, the 1993 film about the Holocaust?",
+        "options": ["Steven Spielberg", "George Lucas", "James Cameron", "Ridley Scott"],
+        "correctAnswer": "Steven Spielberg"
+      },
+      {
+        "question": "Which famous actor voiced Mufasa in *The Lion King*?",
+        "options": ["Samuel L. Jackson", "James Earl Jones", "Morgan Freeman", "Keith David"],
+        "correctAnswer": "James Earl Jones"
+      },
+      {
+        "question": "In *Kill Bill*, who plays 'The Bride' seeking revenge?",
+        "options": ["Lucy Liu", "Uma Thurman", "Jennifer Lawrence", "Salma Hayek"],
+        "correctAnswer": "Uma Thurman"
+      },
+      {
+        "question": "Which actress stars opposite Leonardo DiCaprio in *Titanic*?",
+        "options": ["Cate Blanchett", "Kate Winslet", "Julia Roberts", "Sandra Bullock"],
+        "correctAnswer": "Kate Winslet"
+      },
+      {
+        "question": "In the *Indiana Jones* series, what is Indiana Jones' real first name?",
+        "options": ["Henry", "Richard", "James", "Clark"],
+        "correctAnswer": "Henry"
+      },
+      {
+        "question": "What is the name of the kingdom in Disney's *Frozen*?",
+        "options": ["Arendelle", "Atlantica", "Corona", "Maldonia"],
+        "correctAnswer": "Arendelle"
+      },
+      {
+        "question": "In the *Pirates of the Caribbean* series, what is the name of Jack Sparrow's ship?",
+        "options": [
+          "The Flying Dutchman",
+          "The Black Pearl",
+          "The Queen Anne’s Revenge",
+          "The HMS Interceptor"
+        ],
+        "correctAnswer": "The Black Pearl"
+      },
+      {
+        "question": "Who directed the movie 'Titanic'?",
+        "options": ["Martin Scorsese", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+        "correctAnswer": "James Cameron"
+      },
+      {
+        "question": "What is the highest-grossing film of all time (as of 2024)?",
+        "options": ["Titanic", "Avatar", "Avengers: Endgame", "The Lion King"],
+        "correctAnswer": "Avengers: Endgame"
+      },
+      {
+        "question": "Which actor played the character of 'Harry Potter' in the movie series?",
+        "options": ["Daniel Radcliffe", "Elijah Wood", "Rupert Grint", "Robert Pattinson"],
+        "correctAnswer": "Daniel Radcliffe"
+      },
+      {
+        "question": "In the TV series 'Friends,' what is the name of Ross's second wife?",
+        "options": ["Rachel", "Monica", "Carol", "Emily"],
+        "correctAnswer": "Emily"
+      },
+      {
+        "question": "What is the name of the kingdom in the movie 'Frozen'?",
+        "options": ["Arendelle", "Wakanda", "Narnia", "Genovia"],
+        "correctAnswer": "Arendelle"
+      },
+      {
+        "question": "Who starred as the titular character in the 1990 film 'Edward Scissorhands'?",
+        "options": ["Johnny Depp", "Brad Pitt", "Leonardo DiCaprio", "Tom Cruise"],
+        "correctAnswer": "Johnny Depp"
+      },
+      {
+        "question": "Which movie features the song 'My Heart Will Go On'?",
+        "options": ["Titanic", "The Bodyguard", "Moulin Rouge!", "Pretty Woman"],
+        "correctAnswer": "Titanic"
+      },
+      {
+        "question": "In which film does Tom Hanks portray a man stranded on an island?",
+        "options": ["Cast Away", "Forrest Gump", "Apollo 13", "The Terminal"],
+        "correctAnswer": "Cast Away"
+      },
+      {
+        "question": "What is the name of the coffee shop in the TV show 'Friends'?",
+        "options": ["Central Perk", "Coffee House", "Central Coffee", "The Percolator"],
+        "correctAnswer": "Central Perk"
+      },
+      {
+        "question": "Who directed the 2020 movie 'Tenet'?",
+        "options": ["Christopher Nolan", "David Fincher", "James Cameron", "Ridley Scott"],
+        "correctAnswer": "Christopher Nolan"
+      },
+      {
+        "question": "Which movie series features a character named 'Legolas'?",
+        "options": [
+          "Harry Potter",
+          "The Lord of the Rings",
+          "Pirates of the Caribbean",
+          "Star Wars"
+        ],
+        "correctAnswer": "The Lord of the Rings"
+      },
+      {
+        "question": "In 'Breaking Bad,' what is the main character's real name?",
+        "options": ["Saul Goodman", "Walter White", "Gustavo Fring", "Jesse Pinkman"],
+        "correctAnswer": "Walter White"
+      },
+      {
+        "question": "Which character does Keanu Reeves play in 'The Matrix' series?",
+        "options": ["Neo", "John Wick", "Morpheus", "Agent Smith"],
+        "correctAnswer": "Neo"
+      },
+      {
+        "question": "In the movie 'Inception,' who leads the team of dream extractors?",
+        "options": ["Dom Cobb", "Arthur", "Robert Fischer", "Eames"],
+        "correctAnswer": "Dom Cobb"
+      },
+      {
+        "question": "Which Disney movie features a character named 'Simba'?",
+        "options": ["The Jungle Book", "Aladdin", "The Lion King", "Beauty and the Beast"],
+        "correctAnswer": "The Lion King"
+      },
+      {
+        "question": "In the 'Harry Potter' films, what is the name of Harry's owl?",
+        "options": ["Hedwig", "Errol", "Pigwidgeon", "Crookshanks"],
+        "correctAnswer": "Hedwig"
+      },
+      {
+        "question": "What is the name of the fictional African country in 'Black Panther'?",
+        "options": ["Genovia", "Sokovia", "Wakanda", "Zamunda"],
+        "correctAnswer": "Wakanda"
+      },
+      {
+        "question": "Who plays the character of 'Joker' in the 2019 film?",
+        "options": ["Joaquin Phoenix", "Heath Ledger", "Jared Leto", "Jack Nicholson"],
+        "correctAnswer": "Joaquin Phoenix"
+      },
+      {
+        "question": "Which TV series is set in the fictional town of Hawkins, Indiana?",
+        "options": ["Stranger Things", "Riverdale", "The OA", "Dark"],
+        "correctAnswer": "Stranger Things"
+      },
+      {
+        "question": "In 'The Avengers,' who is the god of thunder?",
+        "options": ["Thor", "Loki", "Hulk", "Iron Man"],
+        "correctAnswer": "Thor"
+      }
+    ],
+    "gastronomy": [
+      {
+        "question": "What is the main ingredient in the Japanese dish 'miso soup'?",
+        "options": ["Soybean paste", "Fish stock", "Seaweed", "Rice"],
+        "correctAnswer": "Soybean paste"
+      },
+      {
+        "question": "What is the primary ingredient in 'gnocchi,' a traditional Italian pasta?",
+        "options": ["Wheat flour", "Semolina", "Potatoes", "Cornmeal"],
+        "correctAnswer": "Potatoes"
+      },
+      {
+        "question": "Which country is famous for creating 'kimchi,' a dish made from fermented vegetables?",
+        "options": ["Japan", "China", "South Korea", "Vietnam"],
+        "correctAnswer": "South Korea"
+      },
+      {
+        "question": "What type of pastry is traditionally used to make a 'Napoleon' dessert?",
+        "options": ["Choux pastry", "Filo pastry", "Puff pastry", "Shortcrust pastry"],
+        "correctAnswer": "Puff pastry"
+      },
+      {
+        "question": "What spice gives 'paella' its distinctive yellow color?",
+        "options": ["Turmeric", "Paprika", "Cumin", "Saffron"],
+        "correctAnswer": "Saffron"
+      },
+      {
+        "question": "Which cheese is traditionally used in an Italian Caprese salad?",
+        "options": ["Gorgonzola", "Ricotta", "Mozzarella", "Parmesan"],
+        "correctAnswer": "Mozzarella"
+      },
+      {
+        "question": "What type of fish is commonly used to make the Japanese dish 'sashimi'?",
+        "options": ["Salmon", "Mackerel", "Tuna", "Snapper"],
+        "correctAnswer": "Tuna"
+      },
+      {
+        "question": "Which country is known for the dish 'Pho,' a popular noodle soup?",
+        "options": ["Thailand", "Vietnam", "Japan", "China"],
+        "correctAnswer": "Vietnam"
+      },
+      {
+        "question": "In French cuisine, what is the name for a dish baked with a crust of cheese or breadcrumbs?",
+        "options": ["Ratatouille", "Croque-monsieur", "Gratin", "Soufflé"],
+        "correctAnswer": "Gratin"
+      },
+      {
+        "question": "Which sauce is traditionally served with sushi in Japanese cuisine?",
+        "options": ["Teriyaki", "Soy sauce", "Ponzu", "Mirin"],
+        "correctAnswer": "Soy sauce"
+      },
+      {
+        "question": "What is the main ingredient in 'hummus'?",
+        "options": ["Lentils", "Chickpeas", "Lima beans", "Kidney beans"],
+        "correctAnswer": "Chickpeas"
+      },
+      {
+        "question": "What cooking technique involves submerging food in a vacuum-sealed bag in a water bath at a precise temperature?",
+        "options": ["Sous-vide", "Braising", "Poaching", "Steaming"],
+        "correctAnswer": "Sous-vide"
+      },
+      {
+        "question": "What is the traditional main ingredient in 'moussaka,' a Mediterranean dish?",
+        "options": ["Eggplant", "Zucchini", "Lamb", "Potato"],
+        "correctAnswer": "Eggplant"
+      },
+      {
+        "question": "In Mexican cuisine, what is 'mole'?",
+        "options": [
+          "A type of tortilla",
+          "A spicy salsa",
+          "A sauce made with chocolate and spices",
+          "A corn-based drink"
+        ],
+        "correctAnswer": "A sauce made with chocolate and spices"
+      },
+      {
+        "question": "Which dessert is made by cooking sugar until it caramelizes, and is often topped with cream or nuts?",
+        "options": ["Mousse", "Brittle", "Toffee", "Nougat"],
+        "correctAnswer": "Toffee"
+      },
+      {
+        "question": "What type of flour is traditionally used to make Italian polenta?",
+        "options": ["Rice flour", "Semolina", "Cornmeal", "Almond flour"],
+        "correctAnswer": "Cornmeal"
+      },
+      {
+        "question": "Which herb is typically used to make traditional Italian pesto sauce?",
+        "options": ["Parsley", "Oregano", "Basil", "Thyme"],
+        "correctAnswer": "Basil"
+      },
+      {
+        "question": "What type of pastry is used in Greek baklava?",
+        "options": ["Choux", "Puff", "Filo", "Shortcrust"],
+        "correctAnswer": "Filo"
+      },
+      {
+        "question": "What type of fruit is traditionally used in British 'Eton Mess' dessert?",
+        "options": ["Strawberries", "Blueberries", "Apples", "Cherries"],
+        "correctAnswer": "Strawberries"
+      },
+      {
+        "question": "In Indian cuisine, what is a 'tandoor'?",
+        "options": [
+          "A type of spice blend",
+          "A clay oven",
+          "A type of flatbread",
+          "A type of chutney"
+        ],
+        "correctAnswer": "A clay oven"
+      },
+      {
+        "question": "Which country is famous for originating sushi?",
+        "options": ["Japan", "China", "Thailand", "Vietnam"],
+        "correctAnswer": "Japan"
+      },
+      {
+        "question": "What is the main ingredient in hummus?",
+        "options": ["Chickpeas", "Lentils", "Black beans", "Kidney beans"],
+        "correctAnswer": "Chickpeas"
+      },
+      {
+        "question": "Which Italian dish is traditionally made with layers of pasta, meat, and cheese?",
+        "options": ["Lasagna", "Spaghetti", "Ravioli", "Risotto"],
+        "correctAnswer": "Lasagna"
+      },
+      {
+        "question": "What is the primary ingredient in guacamole?",
+        "options": ["Avocado", "Tomato", "Cucumber", "Lime"],
+        "correctAnswer": "Avocado"
+      },
+      {
+        "question": "What is the national dish of Spain, often made with rice, seafood, and saffron?",
+        "options": ["Paella", "Tapas", "Gazpacho", "Empanada"],
+        "correctAnswer": "Paella"
+      },
+      {
+        "question": "Which type of pasta is shaped like small rice grains and is often used in soups?",
+        "options": ["Orzo", "Penne", "Spaghetti", "Fusilli"],
+        "correctAnswer": "Orzo"
+      },
+      {
+        "question": "In French cuisine, what is a 'bouillabaisse'?",
+        "options": ["Fish stew", "Bread", "Cheese", "Wine"],
+        "correctAnswer": "Fish stew"
+      },
+      {
+        "question": "What type of pastry is used to make croissants?",
+        "options": ["Puff pastry", "Shortcrust pastry", "Phyllo dough", "Brioche"],
+        "correctAnswer": "Puff pastry"
+      },
+      {
+        "question": "Which cheese is traditionally used on a margherita pizza?",
+        "options": ["Mozzarella", "Cheddar", "Brie", "Gorgonzola"],
+        "correctAnswer": "Mozzarella"
+      },
+      {
+        "question": "Which ingredient is typically used to make a Japanese miso soup?",
+        "options": ["Fermented soybeans", "Fish stock", "Rice", "Sesame oil"],
+        "correctAnswer": "Fermented soybeans"
+      },
+      {
+        "question": "What type of wine is used in a traditional coq au vin?",
+        "options": ["Red wine", "White wine", "Rosé wine", "Sparkling wine"],
+        "correctAnswer": "Red wine"
+      },
+      {
+        "question": "What is a main ingredient in the Italian dessert Tiramisu?",
+        "options": ["Mascarpone cheese", "Cheddar cheese", "Cottage cheese", "Mozzarella cheese"],
+        "correctAnswer": "Mascarpone cheese"
+      },
+      {
+        "question": "Which cuisine is known for dishes like Tom Yum and Pad Thai?",
+        "options": ["Thai", "Chinese", "Japanese", "Vietnamese"],
+        "correctAnswer": "Thai"
+      },
+      {
+        "question": "What kind of meat is used in the French dish 'duck confit'?",
+        "options": ["Duck", "Chicken", "Pork", "Beef"],
+        "correctAnswer": "Duck"
+      },
+      {
+        "question": "Which fruit is used to make the alcoholic drink 'Calvados'?",
+        "options": ["Apple", "Grape", "Peach", "Plum"],
+        "correctAnswer": "Apple"
+      },
+      {
+        "question": "What is the name of the spicy Korean dish made from fermented vegetables?",
+        "options": ["Kimchi", "Sushi", "Pho", "Dim sum"],
+        "correctAnswer": "Kimchi"
+      },
+      {
+        "question": "Which dish is made of raw fish and often served in Japanese cuisine?",
+        "options": ["Sashimi", "Bulgogi", "Pad Thai", "Gazpacho"],
+        "correctAnswer": "Sashimi"
+      },
+      {
+        "question": "What is traditionally spread on a bagel with lox?",
+        "options": ["Cream cheese", "Butter", "Jam", "Mayo"],
+        "correctAnswer": "Cream cheese"
+      },
+      {
+        "question": "In Indian cuisine, which spice is commonly used to add a yellow color to dishes?",
+        "options": ["Turmeric", "Cumin", "Saffron", "Paprika"],
+        "correctAnswer": "Turmeric"
+      },
+      {
+        "question": "What type of bread is commonly used in a Cuban sandwich?",
+        "options": ["Cuban bread", "Baguette", "Ciabatta", "Sourdough"],
+        "correctAnswer": "Cuban bread"
+      }
+    ],
+    "history": [
+      {
+        "question": "Who was the first emperor of the Roman Empire?",
+        "options": ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+        "correctAnswer": "Augustus"
+      },
+      {
+        "question": "In which year did the Battle of Hastings take place?",
+        "options": ["1066", "1215", "1492", "1588"],
+        "correctAnswer": "1066"
+      },
+      {
+        "question": "What was the name of the first manned mission to land on the Moon?",
+        "options": ["Apollo 12", "Apollo 13", "Apollo 11", "Apollo 17"],
+        "correctAnswer": "Apollo 11"
+      },
+      {
+        "question": "Which ancient civilization built the pyramids of Giza?",
+        "options": ["Sumerians", "Egyptians", "Romans", "Greeks"],
+        "correctAnswer": "Egyptians"
+      },
+      {
+        "question": "Who was the third president of the United States?",
+        "options": ["Thomas Jefferson", "Abraham Lincoln", "George Washington", "John Adams"],
+        "correctAnswer": "Thomas Jefferson"
+      },
+      {
+        "question": "Which war ended with the signing of the Treaty of Versailles in 1919?",
+        "options": ["World War I", "World War II", "The Korean War", "The Civil War"],
+        "correctAnswer": "World War I"
+      },
+      {
+        "question": "Which empire was ruled by Genghis Khan?",
+        "options": ["Mongol Empire", "Ottoman Empire", "Roman Empire", "Persian Empire"],
+        "correctAnswer": "Mongol Empire"
+      },
+      {
+        "question": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+        "options": ["Mayflower", "The Endeavour", "Santa Maria", "The Beagle"],
+        "correctAnswer": "Mayflower"
+      },
+      {
+        "question": "Who was the leader of the Soviet Union during World War II?",
+        "options": ["Joseph Stalin", "Leon Trotsky", "Vladimir Lenin", "Mikhail Gorbachev"],
+        "correctAnswer": "Joseph Stalin"
+      },
+      {
+        "question": "In which country did the Industrial Revolution begin?",
+        "options": ["United States", "France", "Germany", "United Kingdom"],
+        "correctAnswer": "United Kingdom"
+      },
+      {
+        "question": "Which ancient city was buried by the eruption of Mount Vesuvius in 79 AD?",
+        "options": ["Pompeii", "Athens", "Carthage", "Babylon"],
+        "correctAnswer": "Pompeii"
+      },
+      {
+        "question": "Who was the first female pharaoh of ancient Egypt?",
+        "options": ["Cleopatra", "Nefertiti", "Hatshepsut", "Maat"],
+        "correctAnswer": "Hatshepsut"
+      },
+      {
+        "question": "Which civilization is credited with inventing the wheel?",
+        "options": ["Mesopotamians", "Indus Valley", "Egyptians", "Romans"],
+        "correctAnswer": "Mesopotamians"
+      },
+      {
+        "question": "Which battle marked the turning point of the American Civil War?",
+        "options": [
+          "Battle of Gettysburg",
+          "Battle of Antietam",
+          "Battle of Fort Sumter",
+          "Battle of Yorktown"
+        ],
+        "correctAnswer": "Battle of Gettysburg"
+      },
+      {
+        "question": "In which year did the Berlin Wall fall?",
+        "options": ["1989", "1975", "2001", "1991"],
+        "correctAnswer": "1989"
+      },
+      {
+        "question": "Which ancient Greek philosopher taught Alexander the Great?",
+        "options": ["Socrates", "Plato", "Aristotle", "Pythagoras"],
+        "correctAnswer": "Aristotle"
+      },
+      {
+        "question": "Which African nation was never colonized by a European power?",
+        "options": ["Ethiopia", "Kenya", "Ghana", "Nigeria"],
+        "correctAnswer": "Ethiopia"
+      },
+      {
+        "question": "What year did Christopher Columbus first land in the Americas?",
+        "options": ["1492", "1453", "1519", "1610"],
+        "correctAnswer": "1492"
+      },
+      {
+        "question": "Which war was fought between the United States and Great Britain from 1812 to 1815?",
+        "options": [
+          "The War of 1812",
+          "The Civil War",
+          "The American Revolution",
+          "The Spanish-American War"
+        ],
+        "correctAnswer": "The War of 1812"
+      },
+      {
+        "question": "What was the primary purpose of the Magna Carta, signed in 1215?",
+        "options": [
+          "To establish English law",
+          "To end the Black Death",
+          "To limit the power of the king",
+          "To create the English Parliament"
+        ],
+        "correctAnswer": "To limit the power of the king"
+      },
+      {
+        "question": "Which civilization built the famous Machu Picchu?",
+        "options": ["Aztecs", "Mayans", "Incans", "Olmecs"],
+        "correctAnswer": "Incans"
+      },
+      {
+        "question": "Who was the first President of the United States?",
+        "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+        "correctAnswer": "George Washington"
+      },
+      {
+        "question": "In which year did World War II end?",
+        "options": ["1941", "1943", "1945", "1947"],
+        "correctAnswer": "1945"
+      },
+      {
+        "question": "Which civilization is known for building pyramids?",
+        "options": ["Ancient Egypt", "Ancient Greece", "The Roman Empire", "The Byzantine Empire"],
+        "correctAnswer": "Ancient Egypt"
+      },
+      {
+        "question": "Who was the British Prime Minister during most of World War II?",
+        "options": [
+          "Winston Churchill",
+          "Neville Chamberlain",
+          "Clement Attlee",
+          "Margaret Thatcher"
+        ],
+        "correctAnswer": "Winston Churchill"
+      },
+      {
+        "question": "The Renaissance began in which country?",
+        "options": ["France", "England", "Italy", "Spain"],
+        "correctAnswer": "Italy"
+      },
+      {
+        "question": "Who was the first person to walk on the moon?",
+        "options": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins", "Yuri Gagarin"],
+        "correctAnswer": "Neil Armstrong"
+      },
+      {
+        "question": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+        "options": ["The Mayflower", "The Santa Maria", "The Nina", "The Pinta"],
+        "correctAnswer": "The Mayflower"
+      },
+      {
+        "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+        "options": ["Joseph Stalin", "Vladimir Lenin", "Mikhail Gorbachev", "Nikita Khrushchev"],
+        "correctAnswer": "Nikita Khrushchev"
+      },
+      {
+        "question": "The Great Wall of China was primarily built to protect against invasions from which group?",
+        "options": ["The Mongols", "The Persians", "The Romans", "The Greeks"],
+        "correctAnswer": "The Mongols"
+      },
+      {
+        "question": "Who was assassinated on April 4, 1968, in Memphis, Tennessee?",
+        "options": ["John F. Kennedy", "Malcolm X", "Martin Luther King Jr.", "Robert F. Kennedy"],
+        "correctAnswer": "Martin Luther King Jr."
+      },
+      {
+        "question": "What was the main cause of the Cold War?",
+        "options": [
+          "Ideological conflict",
+          "Territorial disputes",
+          "Trade disagreements",
+          "Climate change"
+        ],
+        "correctAnswer": "Ideological conflict"
+      },
+      {
+        "question": "In which year did the Berlin Wall fall?",
+        "options": ["1987", "1989", "1991", "1993"],
+        "correctAnswer": "1989"
+      },
+      {
+        "question": "Who discovered penicillin?",
+        "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Thomas Edison"],
+        "correctAnswer": "Alexander Fleming"
+      },
+      {
+        "question": "Which empire was ruled by Genghis Khan?",
+        "options": [
+          "The Mongol Empire",
+          "The Roman Empire",
+          "The Ottoman Empire",
+          "The Persian Empire"
+        ],
+        "correctAnswer": "The Mongol Empire"
+      },
+      {
+        "question": "What was the name of the first successful English settlement in America?",
+        "options": ["Jamestown", "Plymouth", "Roanoke", "Salem"],
+        "correctAnswer": "Jamestown"
+      },
+      {
+        "question": "Who was the famous queen of Ancient Egypt?",
+        "options": ["Cleopatra", "Nefertiti", "Hatshepsut", "Arsinoe"],
+        "correctAnswer": "Cleopatra"
+      },
+      {
+        "question": "Which country gifted the Statue of Liberty to the United States?",
+        "options": ["France", "England", "Germany", "Canada"],
+        "correctAnswer": "France"
+      },
+      {
+        "question": "Who wrote the *Communist Manifesto*?",
+        "options": ["Karl Marx", "Adam Smith", "John Locke", "Jean-Jacques Rousseau"],
+        "correctAnswer": "Karl Marx"
+      },
+      {
+        "question": "Which battle marked the end of Napoleon's rule in France?",
+        "options": [
+          "Battle of Trafalgar",
+          "Battle of Waterloo",
+          "Battle of Leipzig",
+          "Battle of Austerlitz"
+        ],
+        "correctAnswer": "Battle of Waterloo"
+      },
+      {
+        "question": "What was the name of the policy of racial segregation in South Africa?",
+        "options": ["Apartheid", "Jim Crow", "Segregation", "Caste System"],
+        "correctAnswer": "Apartheid"
+      }
+    ],
+    "science": [
+      {
+        "question": "What is the most abundant element in the Earth's crust?",
+        "options": ["Oxygen", "Silicon", "Iron", "Aluminum"],
+        "correctAnswer": "Oxygen"
+      },
+      {
+        "question": "Who is known as the father of modern physics?",
+        "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+        "correctAnswer": "Albert Einstein"
+      },
+      {
+        "question": "Which particle has a negative charge?",
+        "options": ["Proton", "Electron", "Neutron", "Photon"],
+        "correctAnswer": "Electron"
+      },
+      {
+        "question": "What is the chemical formula of methane?",
+        "options": ["CH4", "C2H6", "CO2", "C6H12O6"],
+        "correctAnswer": "CH4"
+      },
+      {
+        "question": "What is the second most abundant gas in Earth's atmosphere?",
+        "options": ["Carbon dioxide", "Nitrogen", "Oxygen", "Argon"],
+        "correctAnswer": "Oxygen"
+      },
+      {
+        "question": "Which element has the highest atomic number in its naturally occurring isotopes?",
+        "options": ["Uranium", "Thorium", "Plutonium", "Radon"],
+        "correctAnswer": "Uranium"
+      },
+      {
+        "question": "What phenomenon explains the bending of light when it passes through different media?",
+        "options": ["Diffraction", "Reflection", "Refraction", "Absorption"],
+        "correctAnswer": "Refraction"
+      },
+      {
+        "question": "Which scientist is credited with the discovery of penicillin?",
+        "options": ["Marie Curie", "Louis Pasteur", "Alexander Fleming", "Joseph Lister"],
+        "correctAnswer": "Alexander Fleming"
+      },
+      {
+        "question": "What is the strongest known material in the world?",
+        "options": ["Diamond", "Graphene", "Carbon nanotubes", "Silicon carbide"],
+        "correctAnswer": "Graphene"
+      },
+      {
+        "question": "Which part of the human body produces insulin?",
+        "options": ["Pancreas", "Liver", "Kidney", "Small intestine"],
+        "correctAnswer": "Pancreas"
+      },
+      {
+        "question": "Which law of motion states that for every action, there is an equal and opposite reaction?",
+        "options": [
+          "Newton's First Law",
+          "Newton's Second Law",
+          "Newton's Third Law",
+          "Law of Conservation of Energy"
+        ],
+        "correctAnswer": "Newton's Third Law"
+      },
+      {
+        "question": "What is the most abundant type of galaxy in the universe?",
+        "options": [
+          "Spiral galaxies",
+          "Elliptical galaxies",
+          "Irregular galaxies",
+          "Lenticular galaxies"
+        ],
+        "correctAnswer": "Spiral galaxies"
+      },
+      {
+        "question": "Which element is known for being the lightest in the periodic table?",
+        "options": ["Hydrogen", "Helium", "Lithium", "Beryllium"],
+        "correctAnswer": "Hydrogen"
+      },
+      {
+        "question": "What is the main source of energy for the Sun?",
+        "options": [
+          "Nuclear fission",
+          "Nuclear fusion",
+          "Gravitational collapse",
+          "Chemical reactions"
+        ],
+        "correctAnswer": "Nuclear fusion"
+      },
+      {
+        "question": "What is the most common cause of genetic mutations?",
+        "options": ["Radiation", "Viruses", "Smoking", "Inherited genes"],
+        "correctAnswer": "Radiation"
+      },
+      {
+        "question": "In what part of the atom are neutrons found?",
+        "options": ["Electron cloud", "Outer shell", "Nucleus", "Neutron ring"],
+        "correctAnswer": "Nucleus"
+      },
+      {
+        "question": "What is the SI unit for electric current?",
+        "options": ["Ampere", "Volt", "Watt", "Coulomb"],
+        "correctAnswer": "Ampere"
+      },
+      {
+        "question": "Which element is essential for the production of thyroid hormones?",
+        "options": ["Iron", "Iodine", "Calcium", "Magnesium"],
+        "correctAnswer": "Iodine"
+      },
+      {
+        "question": "What type of bond is formed when two atoms share electrons?",
+        "options": ["Ionic bond", "Covalent bond", "Hydrogen bond", "Metallic bond"],
+        "correctAnswer": "Covalent bond"
+      },
+      {
+        "question": "What type of celestial object is the Andromeda Galaxy?",
+        "options": ["Star", "Planet", "Asteroid", "Galaxy"],
+        "correctAnswer": "Galaxy"
+      },
+      {
+        "question": "Who developed the theory of evolution by natural selection?",
+        "options": ["Charles Darwin", "Gregor Mendel", "Louis Pasteur", "Carl Linnaeus"],
+        "correctAnswer": "Charles Darwin"
+      },
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "O2", "CO2", "HO"],
+        "correctAnswer": "H2O"
+      },
+      {
+        "question": "Who developed the theory of general relativity?",
+        "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Niels Bohr"],
+        "correctAnswer": "Albert Einstein"
+      },
+      {
+        "question": "What planet is known as the 'Red Planet'?",
+        "options": ["Mars", "Jupiter", "Saturn", "Venus"],
+        "correctAnswer": "Mars"
+      },
+      {
+        "question": "What gas do plants absorb from the atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+        "correctAnswer": "Carbon dioxide"
+      },
+      {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["Gold", "Iron", "Diamond", "Silver"],
+        "correctAnswer": "Diamond"
+      },
+      {
+        "question": "How many bones are in the adult human body?",
+        "options": ["206", "201", "210", "215"],
+        "correctAnswer": "206"
+      },
+      {
+        "question": "What type of energy does a moving object have?",
+        "options": ["Potential energy", "Thermal energy", "Kinetic energy", "Chemical energy"],
+        "correctAnswer": "Kinetic energy"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Au", "Ag", "Go", "Gd"],
+        "correctAnswer": "Au"
+      },
+      {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Nucleus", "Ribosome", "Mitochondria", "Cell membrane"],
+        "correctAnswer": "Mitochondria"
+      },
+      {
+        "question": "What force keeps planets in orbit around the sun?",
+        "options": ["Magnetic force", "Nuclear force", "Gravitational force", "Electric force"],
+        "correctAnswer": "Gravitational force"
+      },
+      {
+        "question": "What is the center of an atom called?",
+        "options": ["Electron", "Proton", "Nucleus", "Neutron"],
+        "correctAnswer": "Nucleus"
+      },
+      {
+        "question": "What organ is responsible for pumping blood through the body?",
+        "options": ["Liver", "Lung", "Kidney", "Heart"],
+        "correctAnswer": "Heart"
+      },
+      {
+        "question": "What is the most abundant gas in the Earth's atmosphere?",
+        "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+        "correctAnswer": "Nitrogen"
+      },
+      {
+        "question": "What instrument is used to measure temperature?",
+        "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+        "correctAnswer": "Thermometer"
+      },
+      {
+        "question": "What planet is the largest in our solar system?",
+        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "correctAnswer": "Jupiter"
+      },
+      {
+        "question": "What is the main gas found in the air we breathe?",
+        "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+        "correctAnswer": "Nitrogen"
+      },
+      {
+        "question": "Who is known as the father of modern physics?",
+        "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Niels Bohr"],
+        "correctAnswer": "Isaac Newton"
+      },
+      {
+        "question": "What is the process by which plants make their food?",
+        "options": ["Photosynthesis", "Respiration", "Digestion", "Fermentation"],
+        "correctAnswer": "Photosynthesis"
+      },
+      {
+        "question": "What part of the human body controls movement and thought?",
+        "options": ["Heart", "Lungs", "Brain", "Liver"],
+        "correctAnswer": "Brain"
+      },
+      {
+        "question": "What is the boiling point of water at standard atmospheric pressure?",
+        "options": ["0°C", "50°C", "100°C", "200°C"],
+        "correctAnswer": "100°C"
+      }
+    ],
+    "sport": [
+      {
+        "question": "Which country hosted the 2008 Summer Olympics?",
+        "options": ["China", "Greece", "United States", "Australia"],
+        "correctAnswer": "China"
+      },
+      {
+        "question": "Who holds the record for the most goals scored in a single World Cup tournament?",
+        "options": ["Ronaldo Nazário", "Marta", "Just Fontaine", "Miroslav Klose"],
+        "correctAnswer": "Just Fontaine"
+      },
+      {
+        "question": "Which athlete is known as the fastest man in the world, holding the 100m world record?",
+        "options": ["Tyson Gay", "Usain Bolt", "Carl Lewis", "Justin Gatlin"],
+        "correctAnswer": "Usain Bolt"
+      },
+      {
+        "question": "Which NFL team won the most Super Bowl titles in the 20th century?",
+        "options": [
+          "Dallas Cowboys",
+          "Pittsburgh Steelers",
+          "San Francisco 49ers",
+          "Green Bay Packers"
+        ],
+        "correctAnswer": "Pittsburgh Steelers"
+      },
+      {
+        "question": "Which tennis player has won the most Grand Slam titles in men's singles?",
+        "options": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+        "correctAnswer": "Novak Djokovic"
+      },
+      {
+        "question": "In what year did Michael Jordan retire for the second time from the NBA?",
+        "options": ["1998", "2001", "2003", "1999"],
+        "correctAnswer": "1999"
+      },
+      {
+        "question": "Who was the first female athlete to win a Nobel Prize?",
+        "options": [
+          "Marie Curie",
+          "Venus Williams",
+          "Billie Jean King",
+          "Florence Griffith-Joyner"
+        ],
+        "correctAnswer": "Marie Curie"
+      },
+      {
+        "question": "What is the maximum break you can achieve in a single frame of snooker?",
+        "options": ["147", "155", "140", "170"],
+        "correctAnswer": "147"
+      },
+      {
+        "question": "Which country won the first-ever Rugby World Cup in 1987?",
+        "options": ["New Zealand", "South Africa", "Australia", "England"],
+        "correctAnswer": "New Zealand"
+      },
+      {
+        "question": "Who was the first soccer player to score in four different World Cups?",
+        "options": ["Pele", "Miroslav Klose", "Cristiano Ronaldo", "Lionel Messi"],
+        "correctAnswer": "Pele"
+      },
+      {
+        "question": "What year did the first Formula 1 race take place?",
+        "options": ["1947", "1950", "1962", "1939"],
+        "correctAnswer": "1950"
+      },
+      {
+        "question": "Which footballer has won the Ballon d'Or the most times?",
+        "options": ["Cristiano Ronaldo", "Lionel Messi", "Michel Platini", "Ronaldo Nazário"],
+        "correctAnswer": "Lionel Messi"
+      },
+      {
+        "question": "Who was the first athlete to win four Olympic gold medals in one Olympic Games?",
+        "options": ["Carl Lewis", "Michael Phelps", "Mark Spitz", "Paavo Nurmi"],
+        "correctAnswer": "Michael Phelps"
+      },
+      {
+        "question": "Which sport is considered the national pastime of Japan?",
+        "options": ["Baseball", "Sumo wrestling", "Soccer", "Rugby"],
+        "correctAnswer": "Sumo wrestling"
+      },
+      {
+        "question": "What is the longest marathon time for an individual in a competitive race?",
+        "options": [
+          "2 hours, 31 minutes",
+          "3 hours, 2 minutes",
+          "2 hours, 59 minutes",
+          "2 hours, 7 minutes"
+        ],
+        "correctAnswer": "2 hours, 31 minutes"
+      },
+      {
+        "question": "Which country has won the most Olympic gold medals in gymnastics?",
+        "options": ["United States", "Russia", "China", "Romania"],
+        "correctAnswer": "United States"
+      },
+      {
+        "question": "Which NFL player holds the record for the most career rushing yards?",
+        "options": ["Emmitt Smith", "Barry Sanders", "Walter Payton", "LaDainian Tomlinson"],
+        "correctAnswer": "Emmitt Smith"
+      },
+      {
+        "question": "Which swimmer is the most decorated Olympian of all time?",
+        "options": ["Michael Phelps", "Ian Thorpe", "Ryan Lochte", "Mark Spitz"],
+        "correctAnswer": "Michael Phelps"
+      },
+      {
+        "question": "Who was the first woman to compete in the Boston Marathon?",
+        "options": ["Kathrine Switzer", "Paula Radcliffe", "Grete Waitz", "Eliud Kipchoge"],
+        "correctAnswer": "Kathrine Switzer"
+      },
+      {
+        "question": "In which year did the first modern Olympic Games take place?",
+        "options": ["1896", "1900", "1912", "1924"],
+        "correctAnswer": "1896"
+      },
+      {
+        "question": "Which city hosted the 1960 Winter Olympics?",
+        "options": ["Squaw Valley", "Lake Placid", "Cortina d'Ampezzo", "Innsbruck"],
+        "correctAnswer": "Squaw Valley"
+      },
+      {
+        "question": "How many players are on a soccer team on the field at the start of a match?",
+        "options": ["10", "11", "12", "9"],
+        "correctAnswer": "11"
+      },
+      {
+        "question": "In which country were the first modern Olympic Games held?",
+        "options": ["France", "Italy", "Greece", "England"],
+        "correctAnswer": "Greece"
+      },
+      {
+        "question": "What sport is known as the 'king of sports'?",
+        "options": ["Basketball", "Tennis", "Football", "Cricket"],
+        "correctAnswer": "Football"
+      },
+      {
+        "question": "What is the maximum score in a single game of 10-pin bowling?",
+        "options": ["200", "250", "300", "400"],
+        "correctAnswer": "300"
+      },
+      {
+        "question": "Which sport does Cristiano Ronaldo play?",
+        "options": ["Basketball", "Football", "Tennis", "Baseball"],
+        "correctAnswer": "Football"
+      },
+      {
+        "question": "In which sport would you perform a slam dunk?",
+        "options": ["Volleyball", "Basketball", "Football", "Tennis"],
+        "correctAnswer": "Basketball"
+      },
+      {
+        "question": "Who has won the most Grand Slam titles in tennis history (men's singles)?",
+        "options": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+        "correctAnswer": "Novak Djokovic"
+      },
+      {
+        "question": "In baseball, how many strikes result in an out?",
+        "options": ["2", "3", "4", "5"],
+        "correctAnswer": "3"
+      },
+      {
+        "question": "What is the term for scoring three goals in a single soccer game?",
+        "options": ["Triple", "Hat-trick", "Treble", "Threepeat"],
+        "correctAnswer": "Hat-trick"
+      },
+      {
+        "question": "Which country has won the most FIFA World Cup titles?",
+        "options": ["Argentina", "Brazil", "Germany", "Italy"],
+        "correctAnswer": "Brazil"
+      },
+      {
+        "question": "In which sport would you compete in the Tour de France?",
+        "options": ["Running", "Cycling", "Rowing", "Motorsport"],
+        "correctAnswer": "Cycling"
+      },
+      {
+        "question": "Which country is known for the sport of sumo wrestling?",
+        "options": ["China", "South Korea", "Thailand", "Japan"],
+        "correctAnswer": "Japan"
+      },
+      {
+        "question": "What is the national sport of Canada?",
+        "options": ["Soccer", "Basketball", "Ice Hockey", "Cricket"],
+        "correctAnswer": "Ice Hockey"
+      },
+      {
+        "question": "In which sport is the term 'home run' used?",
+        "options": ["Cricket", "Rugby", "Baseball", "Football"],
+        "correctAnswer": "Baseball"
+      },
+      {
+        "question": "What is the color of the jersey worn by the leader in the Tour de France?",
+        "options": ["Green", "Yellow", "Red", "Blue"],
+        "correctAnswer": "Yellow"
+      },
+      {
+        "question": "How long is a marathon?",
+        "options": ["21.0975 km", "30 km", "42.195 km", "50 km"],
+        "correctAnswer": "42.195 km"
+      },
+      {
+        "question": "Which country hosted the 2016 Summer Olympics?",
+        "options": ["China", "Brazil", "Russia", "UK"],
+        "correctAnswer": "Brazil"
+      },
+      {
+        "question": "What is the highest governing body of football worldwide?",
+        "options": ["FIFA", "UEFA", "NBA", "IOC"],
+        "correctAnswer": "FIFA"
+      },
+      {
+        "question": "In which sport would you find a 'pommel horse'?",
+        "options": ["Equestrian", "Gymnastics", "Track and Field", "Swimming"],
+        "correctAnswer": "Gymnastics"
+      },
+      {
+        "question": "Who is the only athlete to win Olympic gold medals in both the Summer and Winter Games?",
+        "options": ["Usain Bolt", "Michael Phelps", "Eddie Eagan", "Jesse Owens"],
+        "correctAnswer": "Eddie Eagan"
+      }
+    ]
+  }
+}

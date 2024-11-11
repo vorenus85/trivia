@@ -14,7 +14,7 @@ defineProps({
 <template>
   <div class="category col-6">
     <div
-      class="category-title ripple text-center p-2 border-round-lg border-2 border-solid border-primary font-bold flex-1 cursor-pointer min-h-full align-content-center"
+      class="category-title ripple text-center p-2 border-round-lg border-1 border-solid border-primary flex-1 cursor-pointer min-h-full align-content-center"
       @click="$emit('onSelectCategory', categoryId)"
     >
       {{ category }}
@@ -28,5 +28,9 @@ defineProps({
   justify-content: center;
   align-items: center;
   font-size: 0.875rem;
+}
+
+.category-title {
+  font-weight: 500;
 }
 </style>

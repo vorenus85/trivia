@@ -1,5 +1,5 @@
 <template>
-  <div class="logo fixed">Queezy</div>
+  <div class="logo">Trivia</div>
 </template>
 <style scoped>
 .logo {
@@ -7,6 +7,6 @@
   color: #fff;
   font-size: 2rem;
   z-index: 50;
-  top: 50px;
+  margin-top: 50px;
 }
 </style>

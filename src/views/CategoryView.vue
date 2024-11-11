@@ -27,7 +27,7 @@ function showDifficultyPage() {
 <template>
   <Title :title="`Please choose category`" />
   <main class="pt-5">
-    <div class="categories flex flex-wrap card p-2">
+    <div class="categories flex flex-wrap card p-1">
       <Category
         :key="category.key"
         v-for="category in quiz.categories"

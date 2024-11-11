@@ -19,6 +19,7 @@
   height: 25vh;
   width: 100%;
   position: relative;
+  margin-top: -3rem;
 }
 
 .planet {

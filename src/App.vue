@@ -14,7 +14,7 @@ const triviaStore = useTriviaStore()
   <div class="centered-content">
     <Logo />
     <Header />
-    <div class="container ml-auto mr-auto p-3 content w-full">
+    <div class="container ml-auto mr-auto p-2 content w-full">
       <CategoryView v-if="triviaStore.activePage === 'START'" />
       <DifficultyView v-if="triviaStore.activePage === 'DIFFICULTY'" />
       <QuestionsView v-if="triviaStore.activePage === 'QUESTIONS'" />
@@ -27,9 +27,8 @@ const triviaStore = useTriviaStore()
 <style scoped lang="scss">
 .centered-content {
   display: flex;
-  height: calc(100vh - 2rem);
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   flex-direction: column;
   overflow: hidden;
 }
