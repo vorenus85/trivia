@@ -71,7 +71,7 @@
   }
 
   &-1 {
-    top: calc(33.3% - 45px);
+    top: calc(33.3% + 10px);
     left: -45px;
   }
 

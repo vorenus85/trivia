@@ -1,88 +1,63 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Array snapshot tests > matches the array snapshot 1`] = `
-[
-  {
-    "key": "film/series",
-    "title": "Film / Series",
-  },
-  {
-    "key": "gastronomy",
-    "title": "Gastronomy",
-  },
-  {
-    "key": "history",
-    "title": "History",
-  },
-  {
-    "key": "science",
-    "title": "Science",
-  },
-  {
-    "key": "sport",
-    "title": "Sport",
-  },
-  {
-    "key": "mixed",
-    "title": "Mixed",
-  },
-]
-`;
-
-exports[`Categories snapshot tests > matches the array snapshot 1`] = `
-[
-  {
-    "key": "film/series",
-    "title": "Film / Series",
-  },
-  {
-    "key": "gastronomy",
-    "title": "Gastronomy",
-  },
-  {
-    "key": "history",
-    "title": "History",
-  },
-  {
-    "key": "science",
-    "title": "Science",
-  },
-  {
-    "key": "Sport",
-    "title": "Sport",
-  },
-  {
-    "key": "mixed",
-    "title": "Mixed",
-  },
-]
-`;
-
 exports[`Categories tests > quiz categories matches the array snapshot 1`] = `
 [
   {
-    "key": "film/series",
-    "title": "Film / Series",
+    "key": "9",
+    "title": "General Knowledge",
   },
   {
-    "key": "gastronomy",
-    "title": "Gastronomy",
+    "key": "27",
+    "title": "Animals",
   },
   {
-    "key": "history",
+    "key": "23",
     "title": "History",
   },
   {
-    "key": "science",
-    "title": "Science",
+    "key": "17",
+    "title": "Science & Nature",
   },
   {
-    "key": "Sport",
-    "title": "Sport",
+    "key": "21",
+    "title": "Sports",
   },
   {
-    "key": "mixed",
-    "title": "Mixed",
+    "key": "14",
+    "title": "TV Series",
+  },
+]
+`;
+
+exports[`It should be correct page names > pages matches the array snapshot 1`] = `
+{
+  "detailedResult": "DETAILED_RESULTS",
+  "difficulty": "DIFFICULTY",
+  "questions": "QUESTIONS",
+  "result": "RESULT",
+  "start": "START",
+}
+`;
+
+exports[`difficulties > difficulties matches the array snapshot 1`] = `
+[
+  {
+    "key": "EASY",
+    "questions": 10,
+    "time": 12,
+    "title": "Easy",
+  },
+  {
+    "key": "MEDIUM",
+    "questions": 10,
+    "time": 10,
+    "title": "Medium",
+  },
+  {
+    "key": "HARD",
+    "questions": 12,
+    "time": 8,
+    "title": "Hard",
   },
 ]
 `;

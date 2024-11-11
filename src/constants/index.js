@@ -6,41 +6,35 @@ export const pages = {
   detailedResult: 'DETAILED_RESULTS'
 }
 
-export const difficulty = {
-  easy: 'EASY',
-  medium: 'MEDIUM',
-  hard: 'HARD'
-}
-
-export const difficultyLength = {
-  easy: 15,
-  medium: 10,
-  hard: 6
-}
+export const difficulties = [
+  { key: 'easy', title: 'Easy', questions: 10, time: 15 },
+  { key: 'medium', title: 'Medium', questions: 10, time: 12 },
+  { key: 'hard', title: 'Hard', questions: 10, time: 10 }
+]
 
 export const categories = [
   {
-    key: 'film/series',
-    title: 'Film / Series'
+    key: '9',
+    title: 'General Knowledge'
   },
   {
-    key: 'gastronomy',
-    title: 'Gastronomy'
+    key: '27',
+    title: 'Animals'
   },
   {
-    key: 'history',
+    key: '23',
     title: 'History'
   },
   {
-    key: 'science',
-    title: 'Science'
+    key: '17',
+    title: 'Science & Nature'
   },
   {
-    key: 'Sport',
-    title: 'Sport'
+    key: '21',
+    title: 'Sports'
   },
   {
-    key: 'mixed',
-    title: 'Mixed'
+    key: '14',
+    title: 'TV Series'
   }
 ]

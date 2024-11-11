@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Title from '../Title.vue'
+import Title from '../PageTitle.vue'
 
 describe('Title', () => {
   let wrapper

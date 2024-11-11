@@ -1,5 +1,5 @@
 import { describe, it, expect, test } from 'vitest'
-import { pages, difficulty, difficultyLength, categories } from '../index.js'
+import { pages, difficulties, categories } from '../index.js'
 
 describe('It should be correct page names', () => {
   test.each`
@@ -14,31 +14,48 @@ describe('It should be correct page names', () => {
 
     expect(actualResult).toBe(value)
   })
-})
 
-describe('It should be correct difficulty names', () => {
-  test.each`
-    name        | value
-    ${'easy'}   | ${'EASY'}
-    ${'medium'} | ${'MEDIUM'}
-    ${'hard'}   | ${'HARD'}
-  `('difficulty: $name, should be: $value', ({ name, value }) => {
-    const actualResult = difficulty[name]
-
-    expect(actualResult).toBe(value)
+  it('pages matches the array snapshot', () => {
+    expect(pages).toMatchSnapshot()
   })
 })
 
-describe('It should be correct difficulty lengths', () => {
-  test.each`
-    name        | value
-    ${'easy'}   | ${15}
-    ${'medium'} | ${10}
-    ${'hard'}   | ${6}
-  `('difficultyLength: $name, should be: $value', ({ name, value }) => {
-    const actualResult = difficultyLength[name]
+describe('difficulties', () => {
+  test('should contain three difficulty levels', () => {
+    expect(difficulties).toHaveLength(3)
+  })
 
-    expect(actualResult).toBe(value)
+  test('should have correct properties for each difficulty level', () => {
+    const expectedDifficulties = [
+      { label: 'EASY', title: 'Easy', questions: 6, timeLength: 10 },
+      { label: 'MEDIUM', title: 'Medium', questions: 8, timeLength: 8 },
+      { label: 'HARD', title: 'Hard', questions: 10, timeLength: 6 }
+    ]
+
+    expectedDifficulties.forEach((expected, index) => {
+      const difficulty = difficulties[index]
+      expect(difficulty.label).toBe(expected.label)
+      expect(difficulty.title).toBe(expected.title)
+      expect(difficulty.questions).toBe(expected.questions)
+      expect(difficulty.timeLength).toBe(expected.timeLength)
+    })
+  })
+
+  test('should contain unique labels', () => {
+    const labels = difficulties.map((d) => d.label)
+    const uniqueLabels = new Set(labels)
+    expect(uniqueLabels.size).toBe(difficulties.length)
+  })
+
+  test('should have timeLength and questions as numbers', () => {
+    difficulties.forEach((difficulty) => {
+      expect(typeof difficulty.questions).toBe('number')
+      expect(typeof difficulty.timeLength).toBe('number')
+    })
+  })
+
+  it('difficulties matches the array snapshot', () => {
+    expect(difficulties).toMatchSnapshot()
   })
 })
 

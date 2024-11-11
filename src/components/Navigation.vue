@@ -1,5 +1,5 @@
 <template>
-  <button>
+  <button class="navigation flex absolute">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path
         d="M9 17.5L3 12L9 6.5"
@@ -18,3 +18,8 @@
     </svg>
   </button>
 </template>
+<style scoped>
+.navigation {
+  transform: translateY(-110px);
+}
+</style>

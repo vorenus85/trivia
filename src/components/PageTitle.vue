@@ -1,6 +1,6 @@
 <template>
   <div class="page-title border-round-xl w-full">
-    <h3 class="text-xl text-center">{{ title }}</h3>
+    <h3 class="text-center">{{ title }}</h3>
   </div>
 </template>
 <script setup>
@@ -32,7 +32,6 @@ defineProps({
 
 .page-title h3 {
   color: var(--text-color);
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   padding: 2rem 1rem;

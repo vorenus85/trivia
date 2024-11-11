@@ -1,14 +1,9 @@
 <script setup>
-import Category from '../components/Category.vue'
-import Title from '../components/Title.vue'
-import { reactive } from 'vue'
+import SelectButton from '../components/SelectButton.vue'
+import PageTitle from '../components/PageTitle.vue'
 import { useTriviaStore } from '../stores/trivia'
 import { pages, categories } from '../constants'
 const triviaStore = useTriviaStore()
-
-const quiz = reactive({
-  categories
-})
 
 function handleSelectCategory(categoryId) {
   setCategory(categoryId)
@@ -25,15 +20,15 @@ function showDifficultyPage() {
 </script>
 
 <template>
-  <Title :title="`Please choose category`" />
+  <PageTitle :title="`Please choose category`" />
   <main class="pt-5">
     <div class="categories flex flex-wrap card p-1">
-      <Category
+      <SelectButton
         :key="category.key"
-        v-for="category in quiz.categories"
-        :category="category.title"
-        :categoryId="category.key"
-        @on-select-category="handleSelectCategory"
+        v-for="category in categories"
+        :title="category.title"
+        :id="category.key"
+        @on-select="handleSelectCategory"
       />
     </div>
   </main>

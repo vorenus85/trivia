@@ -14,7 +14,7 @@ const triviaStore = useTriviaStore()
   <div class="centered-content">
     <Logo />
     <Header />
-    <div class="container ml-auto mr-auto p-2 content w-full">
+    <div class="ml-auto mr-auto p-2 content w-full">
       <CategoryView v-if="triviaStore.activePage === 'START'" />
       <DifficultyView v-if="triviaStore.activePage === 'DIFFICULTY'" />
       <QuestionsView v-if="triviaStore.activePage === 'QUESTIONS'" />
