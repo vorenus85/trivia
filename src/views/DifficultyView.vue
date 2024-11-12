@@ -11,13 +11,18 @@ function navBack() {
   triviaStore.setPage('START')
 }
 
-function handleSelectDifficulty(id) {
-  setDifficulty(id)
+function handleSelectDifficulty(difficulty) {
+  setDifficulty(difficulty.key)
+  setTimePerAnswer(difficulty.time)
   showQuestionsPage()
 }
 
 function setDifficulty(id) {
   triviaStore.setDifficulty(id)
+}
+
+function setTimePerAnswer(value) {
+  triviaStore.setTimePerAnswer(value)
 }
 
 function showQuestionsPage() {
@@ -35,7 +40,7 @@ function showQuestionsPage() {
         v-for="difficulty in difficulties"
         :title="difficulty.title"
         :id="difficulty.key"
-        @on-select="handleSelectDifficulty"
+        @on-select="handleSelectDifficulty(difficulty)"
         :hint="`Get ${difficulty.questions} questions, each with ${difficulty.time} seconds to answer.`"
         size="full"
       />

@@ -1,5 +1,7 @@
 <template>
   <div class="page-title border-round-xl w-full">
+    <slot name="counter"></slot>
+    <slot name="questionCounter"></slot>
     <h3
       class="text-center fadein animation-duration-500"
       :class="value ? 'skeleton' : ''"
