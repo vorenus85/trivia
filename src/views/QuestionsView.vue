@@ -3,7 +3,7 @@
   <PageTitle :value="loading" :title="`${activeQuestion.question}`" class="text-md">
     <template #questionCounter>
       <div class="question-counter text-primary mb-2 text-center">
-        Question {{ activeQuestionIndex + 1 }}/10
+        Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}
       </div>
     </template>
     <template #counter>
@@ -30,7 +30,7 @@
         :title="answer"
         :value="loading"
         :id="answer"
-        @on-select="handleSelectAnswer"
+        @on-select="handleSelectAnswer(answer)"
       />
     </div>
   </main>
@@ -52,17 +52,20 @@ const loading = ref(true)
 const error = ref(null)
 const colorUnfilled = ref('#6a5ae0')
 const counter = ref(triviaStore.selectedTime)
+const questionsAmount = ref(triviaStore.selectedQuestionsAmount)
 let timeoutId = null // Variable to hold the timeout ID
 
 const fetchQuestions = async () => {
   loading.value = true
   const category = triviaStore.selectedCategory
   const difficulty = triviaStore.selectedDifficulty
+  const amount = questionsAmount.value
 
   const cacheKey = `${triviaStore.selectedCategory}-${triviaStore.selectedDifficulty}`
   const cachedQuestions = localStorage.getItem(cacheKey)
 
   if (cachedQuestions) {
+    triviaStore.setQuestions(JSON.parse(cachedQuestions))
     questions.value = JSON.parse(cachedQuestions)
     loading.value = false
     return
@@ -72,9 +75,8 @@ const fetchQuestions = async () => {
     // https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple
     const apiUrl =
       import.meta.env.VITE_API_URL +
-      `?amount=10&category=${category}&difficulty=${difficulty}&type=multiple`
+      `?amount=${amount}&category=${category}&difficulty=${difficulty}&type=multiple`
     const response = await fetch(apiUrl)
-
     if (!response.ok) {
       throw new Error('Failed to load trivias')
     }
@@ -95,6 +97,11 @@ function navBack() {
 }
 
 function getQuestion(index) {
+  if (index === questionsAmount.value) {
+    triviaStore.setPage('RESULT')
+    return
+  }
+
   if (!questions.value.length) {
     return
   }
@@ -116,8 +123,9 @@ function shuffleAnswers(answers) {
   return answers
 }
 
-function handleSelectAnswer() {
+function handleSelectAnswer(answer) {
   clearTimeout(timeoutId) // Clear the current timer when an answer is selected
+  triviaStore.setAnswer(answer)
   const newIndex = activeQuestionIndex.value + 1
   getQuestion(newIndex)
   counter.value = triviaStore.selectedTime // Reset the counter
@@ -133,6 +141,7 @@ function countDownTimer() {
   } else {
     counter.value = triviaStore.selectedTime
     const newIndex = activeQuestionIndex.value + 1
+    triviaStore.setAnswer('')
     getQuestion(newIndex)
     countDownTimer()
   }
@@ -149,9 +158,9 @@ onMounted(async () => {
   countDownTimer()
 })
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .progress {
-  top: -30px;
+  top: -28px;
   left: 50%;
   transform: translateX(-50%);
 }

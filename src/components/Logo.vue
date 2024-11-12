@@ -7,6 +7,7 @@
   color: #fff;
   font-size: 2rem;
   z-index: 50;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 </style>

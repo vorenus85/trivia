@@ -12,20 +12,9 @@ function navBack() {
 }
 
 function handleSelectDifficulty(difficulty) {
-  setDifficulty(difficulty.key)
-  setTimePerAnswer(difficulty.time)
-  showQuestionsPage()
-}
-
-function setDifficulty(id) {
-  triviaStore.setDifficulty(id)
-}
-
-function setTimePerAnswer(value) {
-  triviaStore.setTimePerAnswer(value)
-}
-
-function showQuestionsPage() {
+  triviaStore.setDifficulty(difficulty.key)
+  triviaStore.setTimePerAnswer(difficulty.time)
+  triviaStore.setQuestionsAmount(difficulty.questions)
   triviaStore.setPage(pages.questions)
 }
 </script>
