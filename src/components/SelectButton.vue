@@ -12,24 +12,17 @@ defineProps({
     type: String,
     required: true
   },
-  size: {
-    type: String,
-    default: 'half'
-  },
   value: Boolean
 })
 </script>
 <template>
-  <div class="select-button-wrapper" :class="size === 'half' ? 'col-6' : 'col-12'">
+  <div class="select-button-wrapper">
     <div
-      class="select-button ripple text-center p-2 border-round-lg border-1 border-primary border-solid flex-1 cursor-pointer min-h-full flex align-content-center justify-content-center"
+      class="select-button text-center p-2 cursor-pointer min-h-full flex border-solid border-2 w-full rounded-xl items-center justify-center"
       @click="$emit('onSelect', id)"
     >
-      <div
-        class="flex flex-column align-content-center justify-content-center fadein animation-duration-500 p-2"
-        :class="value ? 'skeleton' : ''"
-      >
-        <span :class="hint?.length ? 'text-left' : ''">{{ title }}</span>
+      <div class="flex justify-center flex-col" :class="value ? 'skeleton' : ''">
+        <span :class="hint?.length ? 'text-left' : ''" v-html="title"></span>
         <small
           class="pt-2 text-gray-700 font-normal"
           :class="hint?.length ? 'text-left' : ''"

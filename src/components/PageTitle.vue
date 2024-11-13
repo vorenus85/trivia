@@ -1,12 +1,8 @@
 <template>
-  <div class="page-title border-round-xl w-full">
+  <div class="page-title rounded-xl w-full shadow-lg">
     <slot name="counter"></slot>
     <slot name="questionCounter"></slot>
-    <h3
-      class="text-center fadein animation-duration-500"
-      :class="value ? 'skeleton' : ''"
-      v-html="title"
-    ></h3>
+    <h3 class="text-center" :class="value ? 'skeleton' : ''" v-html="title"></h3>
   </div>
 </template>
 <script setup>
@@ -21,7 +17,6 @@ defineProps({
 <style scoped lang="scss">
 .page-title {
   background: #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
   padding: 2rem 1rem;
 

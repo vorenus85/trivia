@@ -1,6 +1,6 @@
 <template>
   <div class="result-vew">
-    <PageTitle title="Your Score" class="text-md text-primary">
+    <PageTitle title="Your Score">
       <template #counter>
         <CircleProgressBar
           :value="correctAnswers"
@@ -18,26 +18,23 @@
       </template>
     </PageTitle>
     <main class="pt-5">
-      <div class="results flex flex-wrap card p-1">
+      <div class="results grid grid-cols-2 card gap-2">
         <ResultItem :value="completedAnswers + `%`" title="Completion" color="primary" />
         <ResultItem :value="totalQuestions" title="Total Question" color="primary" />
-        <ResultItem :value="correctAnswers" title="Correct" color="green-500" />
-        <ResultItem :value="wrongAnswers" title="Wrong" color="red-500" />
+        <ResultItem :value="correctAnswers" title="Correct" color="success" />
+        <ResultItem :value="wrongAnswers" title="Wrong" color="danger" />
       </div>
 
-      <div class="actions flex flex-wrap mt-5 card p-2">
-        <div class="col-6 px-0 flex justify-content-start">
-          <button
-            class="btn flex flex-column align-items-center justify-content-center"
-            @click="navToStart"
-          >
+      <div class="actions flex justify-between mt-5 card p-2">
+        <div class="col-6 px-0 flex justify-start">
+          <button class="btn flex flex-col items-center justify-center" @click="navToStart">
             <img src="@/assets/img/svg/iconPlayAgain.svg" width="45" height="45" class="" />
             <small class="py-2">Play again</small>
           </button>
         </div>
         <div class="col-6 px-0 flex justify-content-end">
           <button
-            class="btn flex flex-column align-items-center justify-content-center"
+            class="btn flex flex-col items-center justify-center"
             @click="navToDetailedResults"
           >
             <img src="@/assets/img/svg/iconReview.svg" width="45" height="45" class="" />
@@ -103,6 +100,7 @@ function navToDetailedResults() {
 }
 
 .progress {
+  position: absolute;
   top: -86px;
   left: 50%;
   transform: translateX(-50%);

@@ -1,6 +1,6 @@
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :value="loading" :title="`${activeQuestion.question}`" class="text-md">
+  <PageTitle :value="loading" :title="`${activeQuestion.question}`">
     <template #questionCounter>
       <div class="question-counter text-primary mb-2 text-center">
         Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}
@@ -23,7 +23,7 @@
     </template>
   </PageTitle>
   <main class="pt-5">
-    <div class="answers flex flex-wrap card p-1">
+    <div class="answers grid grid-cols-2 card gap-2">
       <SelectButton
         :key="answer"
         v-for="answer in activeAnswers"
@@ -158,8 +158,9 @@ onMounted(async () => {
   countDownTimer()
 })
 </script>
-<style lang="scss" scoped>
-.progress {
+<style scoped>
+.circle-progress {
+  position: absolute;
   top: -28px;
   left: 50%;
   transform: translateX(-50%);

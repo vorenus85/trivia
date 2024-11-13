@@ -21,9 +21,9 @@ function handleSelectDifficulty(difficulty) {
 
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :title="`Please choose difficulty`" />
+  <PageTitle :title="`Choose difficulty`" />
   <main class="pt-5">
-    <div class="difficulties flex flex-wrap card p-1">
+    <div class="difficulties grid grid-cols-1 card gap-2">
       <SelectButton
         :key="difficulty.key"
         v-for="difficulty in difficulties"

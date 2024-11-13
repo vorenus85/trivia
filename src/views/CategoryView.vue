@@ -20,9 +20,9 @@ function showDifficultyPage() {
 </script>
 
 <template>
-  <PageTitle :title="`Please choose category`" />
+  <PageTitle :title="`Choose category`" />
   <main class="pt-5">
-    <div class="categories flex flex-wrap card p-1">
+    <div class="categories grid grid-cols-2 card gap-2">
       <SelectButton
         :key="category.key"
         v-for="category in categories"

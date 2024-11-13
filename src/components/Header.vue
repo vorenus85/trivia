@@ -1,5 +1,5 @@
 <template>
-  <div class="header border-round-xl">
+  <div class="header">
     <div class="planet planet-1 planet-lg">
       <div class="moon-orbit"><div class="moon"></div></div>
     </div>
@@ -95,7 +95,7 @@
 }
 
 /* ---------- Animation ---------- */
-@-webkit-keyframes spin-right {
+@keyframes spin-right {
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
