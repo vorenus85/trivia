@@ -1,7 +1,7 @@
 <template>
   <Navigation @click="navBack" />
   <PageTitle :value="loading" :title="`${activeQuestion.question}`">
-    <template #questionCounter>
+    <template #question>
       <div class="question-counter text-primary mb-2 text-center">
         Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}
       </div>

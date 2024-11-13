@@ -7,9 +7,9 @@ export const pages = {
 }
 
 export const difficulties = [
-  { key: 'easy', title: 'Easy', questions: 8, time: 12 },
-  { key: 'medium', title: 'Medium', questions: 10, time: 10 },
-  { key: 'hard', title: 'Hard', questions: 12, time: 8 }
+  { key: 'easy', title: 'Easy', questions: 8, time: 100 },
+  { key: 'medium', title: 'Medium', questions: 10, time: 100 },
+  { key: 'hard', title: 'Hard', questions: 12, time: 100 }
 ]
 
 export const categories = [

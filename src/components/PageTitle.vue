@@ -1,7 +1,7 @@
 <template>
   <div class="page-title rounded-xl w-full shadow-lg">
     <slot name="counter"></slot>
-    <slot name="questionCounter"></slot>
+    <slot name="question"></slot>
     <h3 class="text-center" :class="value ? 'skeleton' : ''" v-html="title"></h3>
   </div>
 </template>
