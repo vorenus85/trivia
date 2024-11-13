@@ -82,6 +82,10 @@ const fetchQuestions = async () => {
     }
 
     const data = await response.json()
+    data.results.map((item) => {
+      const answers = [item.correct_answer, ...item.incorrect_answers]
+      return (item.answers = shuffleAnswers(answers))
+    })
     questions.value = data.results
     triviaStore.setQuestions(data.results)
     localStorage.setItem(cacheKey, JSON.stringify(data.results))
@@ -108,11 +112,7 @@ function getQuestion(index) {
 
   activeQuestion.value = questions.value[index]
   activeQuestionIndex.value = index
-  const answers = [
-    activeQuestion?.value?.correct_answer,
-    ...activeQuestion?.value?.incorrect_answers
-  ]
-  activeAnswers.value = shuffleAnswers(answers)
+  activeAnswers.value = activeQuestion.value.answers
 }
 
 function shuffleAnswers(answers) {
