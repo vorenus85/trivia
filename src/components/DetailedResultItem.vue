@@ -22,6 +22,10 @@
         :title="answer"
         size="small"
         class="rounded-xl"
+        :class="[
+          { correct: correctAnswer === answer },
+          { wrong: correctAnswer !== answer && givenAnswer === answer }
+        ]"
       />
     </div>
   </div>
@@ -70,5 +74,16 @@ function toggle() {
 
 .accordion.opened .accordion-arrow {
   transform: rotate(270deg);
+}
+</style>
+<style>
+.correct .select-button {
+  border-color: var(--success-color);
+  background-color: rgb(220 252 231); /* bg-green-100 */
+}
+
+.wrong .select-button {
+  border-color: var(--danger-color);
+  background-color: rgb(254 226 226); /* bg-red-100 */
 }
 </style>

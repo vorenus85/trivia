@@ -8,7 +8,11 @@ export const useTriviaStore = defineStore('trivia', {
     questionsAmount: 10,
     category: null,
     questions: [],
-    answers: []
+    answers: [],
+    completionPercent: null,
+    correctAnswers: null,
+    wrongAnswers: null,
+    score: null
   }),
   getters: {
     selectedQuestionsAmount: (state) => state.questionsAmount,
@@ -17,7 +21,11 @@ export const useTriviaStore = defineStore('trivia', {
     selectedDifficulty: (state) => state.difficulty,
     activePage: (state) => state.page,
     selectedQuestions: (state) => state.questions,
-    getAnswers: (state) => state.answers
+    getAnswers: (state) => state.answers,
+    getCompletions: (state) => state.completionPercent,
+    getCorrectAnswers: (state) => state.correctAnswers,
+    getWrongAnswers: (state) => state.wrongAnswers,
+    getScore: (state) => state.score
   },
   actions: {
     initNewGame() {
@@ -28,6 +36,10 @@ export const useTriviaStore = defineStore('trivia', {
       this.setCategory(null)
       this.setQuestions([])
       this.setDifficulty(null)
+      this.setCompletion(null)
+      this.setCorrectAnswers(null)
+      this.setWrongAnswers(null)
+      this.setScore(null)
     },
     setQuestionsAmount(amount) {
       this.questionsAmount = amount
@@ -52,6 +64,18 @@ export const useTriviaStore = defineStore('trivia', {
     },
     setDifficulty(difficulty) {
       this.difficulty = difficulty
+    },
+    setCompletion(completionPercent) {
+      this.completionPercent = completionPercent
+    },
+    setCorrectAnswers(correctAnswers) {
+      this.correctAnswers = correctAnswers
+    },
+    setWrongAnswers(wrongAnswers) {
+      this.wrongAnswers = wrongAnswers
+    },
+    setScore(score) {
+      this.score = score
     }
   }
 })

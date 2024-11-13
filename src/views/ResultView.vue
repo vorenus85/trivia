@@ -1,5 +1,5 @@
 <template>
-  <div class="result-vew">
+  <div class="result-view">
     <PageTitle title="Your Score">
       <template #counter>
         <CircleProgressBar
@@ -24,24 +24,7 @@
         <ResultItem :value="correctAnswers" title="Correct" color="success" />
         <ResultItem :value="wrongAnswers" title="Wrong" color="danger" />
       </div>
-
-      <div class="actions flex justify-between mt-5 card p-2">
-        <div class="col-6 px-0 flex justify-start">
-          <button class="btn flex flex-col items-center justify-center" @click="navToStart">
-            <img src="@/assets/img/svg/iconPlayAgain.svg" width="45" height="45" class="" />
-            <small class="py-2">Play again</small>
-          </button>
-        </div>
-        <div class="col-6 px-0 flex justify-content-end">
-          <button
-            class="btn flex flex-col items-center justify-center"
-            @click="navToDetailedResults"
-          >
-            <img src="@/assets/img/svg/iconReview.svg" width="45" height="45" class="" />
-            <small class="py-2">View Answers</small>
-          </button>
-        </div>
-      </div>
+      <ResultActions />
     </main>
   </div>
 </template>
@@ -51,13 +34,16 @@ import { CircleProgressBar } from 'circle-progress.vue'
 import { useTriviaStore } from '@/stores/trivia'
 import { computed, ref } from 'vue'
 import ResultItem from '@/components/ResultItem.vue'
+import ResultActions from '@/components/ResultActions.vue'
 const colorUnfilled = ref('#6a5ae0')
 const triviaStore = useTriviaStore()
 
 const completedAnswers = computed(() => {
   const emptyAnswers = triviaStore.answers.filter((item) => item === '')
   let result = 100 - (parseInt(emptyAnswers.length) / parseInt(triviaStore.questionsAmount)) * 100
-  return Math.round(result)
+  result = Math.round(result)
+  triviaStore.setCompletion(result)
+  return result
 })
 
 const totalQuestions = computed(() => {
@@ -71,28 +57,24 @@ const correctAnswers = computed(() => {
       amountOfCorrectAnswers++
     }
   })
+  triviaStore.setCorrectAnswers(amountOfCorrectAnswers)
   return amountOfCorrectAnswers
 })
 const wrongAnswers = computed(() => {
-  return totalQuestions.value - correctAnswers.value
+  const result = totalQuestions.value - correctAnswers.value
+  triviaStore.setWrongAnswers(result)
+  return result
 })
 
 const score = computed(() => {
-  const result = (correctAnswers.value / totalQuestions.value) * 100
-  return Math.round(result)
+  let result = (correctAnswers.value / totalQuestions.value) * 100
+  result = Math.round(result)
+  triviaStore.setScore(result)
+  return result
 })
-
-function navToStart() {
-  triviaStore.setPage('START')
-  triviaStore.initNewGame()
-}
-
-function navToDetailedResults() {
-  triviaStore.setPage('DETAILED_RESULTS')
-}
 </script>
 <style scoped>
-.result-vew .page-title:before {
+.result-view .page-title:before {
   width: 120px;
   height: 120px;
   top: -90px;
