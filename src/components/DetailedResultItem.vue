@@ -1,7 +1,12 @@
 <template>
   <div
     class="accordion mb-5 p-2 rounded-lg"
-    :class="[{ opened: isOpen }, { 'bg-red-50': !isCorrect }, { 'bg-green-50': isCorrect }]"
+    :class="[
+      { opened: isOpen },
+      { 'bg-red-100': !isCorrect && givenAnswer.length },
+      { 'bg-stone-100': !isCorrect && !givenAnswer.length },
+      { 'bg-green-100': isCorrect }
+    ]"
     @click="toggle"
   >
     <img
