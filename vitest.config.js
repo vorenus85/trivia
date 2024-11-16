@@ -9,6 +9,7 @@ export default mergeConfig(
       globals: true,
       coverage: {
         provider: 'istanbul',
+        exclude: ['src/App.vue', 'src/main.js', '.eslintrc.cjs  '],
         thresholds: {
           // Thresholds for all files
           statements: 90,
