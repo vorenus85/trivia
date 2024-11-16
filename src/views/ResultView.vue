@@ -32,7 +32,7 @@
 import PageTitle from '@/components/PageTitle.vue'
 import { CircleProgressBar } from 'circle-progress.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { computed, ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 import ResultItem from '@/components/ResultItem.vue'
 import ResultActions from '@/components/ResultActions.vue'
 const colorUnfilled = ref('#6a5ae0')
@@ -71,6 +71,12 @@ const score = computed(() => {
   result = Math.round(result)
   triviaStore.setScore(result)
   return result
+})
+
+onMounted(() => {
+  // remove completed trivia from localStorage
+  const completedTrivia = triviaStore.category + '-' + triviaStore.difficulty
+  localStorage.removeItem(completedTrivia)
 })
 </script>
 <style scoped>
