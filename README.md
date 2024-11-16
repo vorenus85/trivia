@@ -1,41 +1,51 @@
-# trivia
+# Trivia App
 
-This template should help get you started developing with Vue 3 in Vite.
+A fun and interactive trivia application that challenges your knowledge across multiple categories, powered by the Open Trivia Database API.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Multiple categories, including TV Series, Gastronomy, History, Science, and Sports.
+- Dynamically fetched questions per category with 4 answer options each from [Open Trivia Database](https://opentdb.com/).
+- Fully responsive and styled with [Tailwind CSS](https://tailwindcss.com/).
+- Smooth and fast performance using [Vue 3](https://vuejs.org/) and [Vite](https://vite.dev/).
 
-## Customize configuration
+## Tech Stack
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Vue 3** (Composition API)
+- **Vite** (Build tool)
+- **Pinia** (State Management)
+- **Tailwind** CSS (Styling)
+- **Open Trivia Database API** (Question source)
 
-## Project Setup
+1. Clone the repository:
+
+```sh
+git clone https://github.com/vorenus85/trivia.git
+cd trivia
+```
+
+2. Install dependencies:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. Run the development server:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+4. Build for production:
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## API Integration
 
-```sh
-npm run test:unit
-```
+The app fetches trivia questions from the **Open Trivia Database API**. Ensure you have internet access to retrieve questions dynamically.
 
-### Lint with [ESLint](https://eslint.org/)
+## License
 
-```sh
-npm run lint
-```
+MIT License

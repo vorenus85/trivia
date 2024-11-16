@@ -3,7 +3,7 @@
   "version": "0.7.0",
   "private": true,
   "type": "module",
-  "homepage": "https://vorenus85.github.io/queezy/",
+  "homepage": "https://vorenus85.github.io/trivia/",
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
