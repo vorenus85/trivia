@@ -1,14 +1,14 @@
 import { describe, it, expect, beforeAll } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Title from '../PageTitle.vue'
+import PageTitle from '../PageTitle.vue'
 
-describe('Title', () => {
+describe('PageTitle', () => {
   let wrapper
   const defaultProp = { title: 'Please choose a category' }
 
   beforeAll(() => {
-    wrapper = mount(Title, { props: { title: defaultProp.title } })
+    wrapper = mount(PageTitle, { props: { title: defaultProp.title } })
   })
 
   it('should render component properly', () => {

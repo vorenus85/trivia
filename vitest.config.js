@@ -8,7 +8,14 @@ export default mergeConfig(
     test: {
       globals: true,
       coverage: {
-        provider: 'istanbul'
+        provider: 'istanbul',
+        thresholds: {
+          // Thresholds for all files
+          statements: 90,
+          functions: 90,
+          branches: 90,
+          lines: 90
+        }
       },
       environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],

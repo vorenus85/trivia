@@ -27,30 +27,24 @@ describe('difficulties', () => {
 
   test('should have correct properties for each difficulty level', () => {
     const expectedDifficulties = [
-      { label: 'EASY', title: 'Easy', questions: 6, timeLength: 10 },
-      { label: 'MEDIUM', title: 'Medium', questions: 8, timeLength: 8 },
-      { label: 'HARD', title: 'Hard', questions: 10, timeLength: 6 }
+      { key: 'easy', title: 'Easy', questions: 8, time: 12 },
+      { key: 'medium', title: 'Medium', questions: 10, time: 10 },
+      { key: 'hard', title: 'Hard', questions: 12, time: 8 }
     ]
 
     expectedDifficulties.forEach((expected, index) => {
       const difficulty = difficulties[index]
-      expect(difficulty.label).toBe(expected.label)
+      expect(difficulty.key).toBe(expected.key)
       expect(difficulty.title).toBe(expected.title)
       expect(difficulty.questions).toBe(expected.questions)
-      expect(difficulty.timeLength).toBe(expected.timeLength)
+      expect(difficulty.time).toBe(expected.time)
     })
   })
 
-  test('should contain unique labels', () => {
-    const labels = difficulties.map((d) => d.label)
-    const uniqueLabels = new Set(labels)
-    expect(uniqueLabels.size).toBe(difficulties.length)
-  })
-
-  test('should have timeLength and questions as numbers', () => {
+  test('should have time and questions as numbers', () => {
     difficulties.forEach((difficulty) => {
       expect(typeof difficulty.questions).toBe('number')
-      expect(typeof difficulty.timeLength).toBe('number')
+      expect(typeof difficulty.time).toBe('number')
     })
   })
 

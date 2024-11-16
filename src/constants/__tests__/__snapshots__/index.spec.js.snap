@@ -42,19 +42,19 @@ exports[`It should be correct page names > pages matches the array snapshot 1`] 
 exports[`difficulties > difficulties matches the array snapshot 1`] = `
 [
   {
-    "key": "EASY",
-    "questions": 10,
+    "key": "easy",
+    "questions": 8,
     "time": 12,
     "title": "Easy",
   },
   {
-    "key": "MEDIUM",
+    "key": "medium",
     "questions": 10,
     "time": 10,
     "title": "Medium",
   },
   {
-    "key": "HARD",
+    "key": "hard",
     "questions": 12,
     "time": 8,
     "title": "Hard",
