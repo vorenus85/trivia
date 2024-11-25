@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createPinia, setActivePinia } from 'pinia'
-import { pages, categories } from '@/constants'
+import { categories } from '@/constants'
 import PageTitle from '@/components/PageTitle.vue'
 import SelectButton from '@/components/SelectButton.vue'
 import CategoryView from '@/views/CategoryView.vue'
@@ -20,7 +20,7 @@ describe('CategoryView.vue', () => {
 
   beforeEach(() => {
     // Initialize Pinia
-    setActivePinia(createPinia({ fakeApp: true }))
+    setActivePinia(createPinia())
 
     // Mount the component
     wrapper = mount(CategoryView, {
