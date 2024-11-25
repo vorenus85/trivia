@@ -47,11 +47,15 @@ const props = defineProps({
 })
 
 const isOpen = ref(false)
-const correctAnswer = triviaStore.questions[props.index]?.correct_answer
-const givenAnswer = triviaStore.answers[props.index]
+const correctAnswer = computed(() => {
+  return triviaStore.questions[props.index]?.correct_answer
+})
+const givenAnswer = computed(() => {
+  return triviaStore.answers[props.index]
+})
 
 const isCorrect = computed(() => {
-  return correctAnswer === givenAnswer
+  return correctAnswer.value === givenAnswer.value
 })
 
 function toggle() {

@@ -75,24 +75,43 @@ describe('DetailedResultItem.vue', () => {
     const accordion = wrapper.find('.accordion')
     expect(accordion.classes()).toContain('bg-green-100')
   })
-
   /*
   it('applies incorrect styling when the answer is wrong', async () => {
-    // Modify the mocked answers
-    mockStore.answers[0] = 'Wrong Answer'
-    await wrapper.vm.$nextTick()
+    await wrapper.setProps({
+      question: {
+        type: 'multiple',
+        difficulty: 'easy',
+        category: 'General Knowledge',
+        question: 'How much is the fish?',
+        correct_answer: 9,
+        incorrect_answers: [6, 7, 8],
+        answers: [6, 7, 8, 9]
+      }
+    })
+    await wrapper.vm.$forceUpdate() // Trigger a re-render
 
     const accordion = wrapper.find('.accordion')
+    console.log(accordion.classes())
     expect(accordion.classes()).toContain('bg-red-100')
   })
-
+*/
+  /*
   it('applies default styling when no answer is given', async () => {
-    // Reset the mocked answers
-    mockStore.answers[0] = ''
+    await wrapper.setProps({
+      question: {
+        type: 'multiple',
+        difficulty: 'easy',
+        category: 'General Knowledge',
+        question: 'How much is the fish?',
+        correct_answer: 9,
+        incorrect_answers: [6, 7, 8],
+        answers: [6, 7, 8, 9]
+      }
+    })
     await wrapper.vm.$nextTick()
 
     const accordion = wrapper.find('.accordion')
     expect(accordion.classes()).toContain('bg-stone-100')
   })
-    */
+  */
 })
