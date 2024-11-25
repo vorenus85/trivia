@@ -6,15 +6,7 @@ import { pages, categories } from '../constants'
 const triviaStore = useTriviaStore()
 
 function handleSelectCategory(categoryId) {
-  setCategory(categoryId)
-  showDifficultyPage()
-}
-
-function setCategory(categoryId) {
   triviaStore.setCategory(categoryId)
-}
-
-function showDifficultyPage() {
   triviaStore.setPage(pages.difficulty)
 }
 </script>
