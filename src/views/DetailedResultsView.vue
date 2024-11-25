@@ -41,7 +41,7 @@
           :index="index"
         />
       </div>
-      <ResultActions :showViewAnswers="false" />
+      <ResultActions :showViewAnswers="false" @navToStart="onNavToStart" />
     </main>
   </div>
 </template>
@@ -59,6 +59,11 @@ const colorUnfilled = ref('#6a5ae0')
 
 function navBack() {
   triviaStore.setPage('RESULT')
+}
+
+const onNavToStart = function () {
+  triviaStore.setPage('START')
+  triviaStore.initNewGame()
 }
 </script>
 <style scoped>

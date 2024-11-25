@@ -24,7 +24,7 @@
         <ResultItem :value="correctAnswers" title="Correct" color="success" />
         <ResultItem :value="wrongAnswers" title="Wrong" color="danger" />
       </div>
-      <ResultActions />
+      <ResultActions @navToStart="onNavToStart" @navToDetailedResults="onNavToDetailedResults" />
     </main>
   </div>
 </template>
@@ -32,7 +32,7 @@
 import PageTitle from '@/components/PageTitle.vue'
 import { CircleProgressBar } from 'circle-progress.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import ResultItem from '@/components/ResultItem.vue'
 import ResultActions from '@/components/ResultActions.vue'
 const colorUnfilled = ref('#6a5ae0')
@@ -72,6 +72,15 @@ const score = computed(() => {
   triviaStore.setScore(result)
   return result
 })
+
+const onNavToStart = function () {
+  triviaStore.setPage('START')
+  triviaStore.initNewGame()
+}
+
+const onNavToDetailedResults = function () {
+  triviaStore.setPage('DETAILED_RESULTS')
+}
 
 onMounted(() => {
   // remove completed trivia from sessionStorage
