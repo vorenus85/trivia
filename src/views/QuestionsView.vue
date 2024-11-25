@@ -62,7 +62,7 @@ const fetchQuestions = async () => {
   const amount = questionsAmount.value
 
   const cacheKey = `${triviaStore.selectedCategory}-${triviaStore.selectedDifficulty}`
-  const cachedQuestions = localStorage.getItem(cacheKey)
+  const cachedQuestions = sessionStorage.getItem(cacheKey)
 
   if (cachedQuestions) {
     triviaStore.setQuestions(JSON.parse(cachedQuestions))
@@ -88,7 +88,7 @@ const fetchQuestions = async () => {
     })
     questions.value = data.results
     triviaStore.setQuestions(data.results)
-    localStorage.setItem(cacheKey, JSON.stringify(data.results))
+    sessionStorage.setItem(cacheKey, JSON.stringify(data.results))
   } catch (error) {
     error.value = error.message
   } finally {

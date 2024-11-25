@@ -74,9 +74,9 @@ const score = computed(() => {
 })
 
 onMounted(() => {
-  // remove completed trivia from localStorage
+  // remove completed trivia from sessionStorage
   const completedTrivia = triviaStore.category + '-' + triviaStore.difficulty
-  localStorage.removeItem(completedTrivia)
+  sessionStorage.removeItem(completedTrivia)
 })
 </script>
 <style scoped>
