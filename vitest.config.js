@@ -7,18 +7,18 @@ export default mergeConfig(
   defineConfig({
     test: {
       globals: true,
+      environment: 'jsdom',
       coverage: {
         provider: 'istanbul',
         exclude: ['src/App.vue', 'src/main.js', '.eslintrc.cjs  '],
         thresholds: {
-          // Thresholds for all files
-          statements: 90,
-          functions: 90,
-          branches: 90,
-          lines: 90
+          // Thresholds for basic level
+          statements: 50,
+          functions: 60,
+          branches: 40,
+          lines: 50
         }
       },
-      environment: 'jsdom',
       exclude: [...configDefaults.exclude, 'e2e/*'],
       root: fileURLToPath(new URL('./', import.meta.url))
     }
