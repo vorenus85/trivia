@@ -32,7 +32,6 @@ export const useTriviaStore = defineStore('trivia', {
       this.setQuestionsAmount(10)
       this.clearAnswers()
       this.setTimePerAnswer(10)
-      this.setTimePerAnswer(10)
       this.setCategory(null)
       this.setQuestions([])
       this.setDifficulty(null)
