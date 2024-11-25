@@ -3,8 +3,8 @@
     class="accordion mb-5 p-2 rounded-lg"
     :class="[
       { opened: isOpen },
-      { 'bg-red-100': !isCorrect && givenAnswer.length },
-      { 'bg-stone-100': !isCorrect && !givenAnswer.length },
+      { 'bg-red-100': !isCorrect && givenAnswer?.length },
+      { 'bg-stone-100': !isCorrect && !givenAnswer?.length },
       { 'bg-green-100': isCorrect }
     ]"
     @click="toggle"
@@ -47,7 +47,7 @@ const props = defineProps({
 })
 
 const isOpen = ref(false)
-const correctAnswer = triviaStore.questions[props.index].correct_answer
+const correctAnswer = triviaStore.questions[props.index]?.correct_answer
 const givenAnswer = triviaStore.answers[props.index]
 
 const isCorrect = computed(() => {

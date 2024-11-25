@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import Navigation from '../Navigation.vue'
 
-describe('Navigation', () => {
+describe('Navigation.vue', () => {
   let wrapper
 
   it('render navigation button', () => {
