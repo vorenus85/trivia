@@ -1,10 +1,12 @@
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :value="loading" :title="`${activeQuestion.question}`">
+  <PageTitle :value="loading" :title="activeQuestion.question">
     <template #question>
       <div class="question-counter text-primary mb-4 text-center">
         <strong>{{ triviaStore.categoryTitle }}</strong>
-        <div>Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}</div>
+        <div>
+          {{ translation[lang].question }} {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}
+        </div>
       </div>
     </template>
     <template #counter>
@@ -42,9 +44,13 @@ import Navigation from '@/components/Navigation.vue'
 import PageTitle from '@/components/PageTitle.vue'
 import SelectButton from '@/components/SelectButton.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { translation } from '../constants'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 
 const triviaStore = useTriviaStore()
+const lang = computed(() => {
+  return triviaStore.selectedLanguage
+})
 const questions = ref([])
 const activeQuestionIndex = ref(0)
 const activeQuestion = ref({ question: '' })

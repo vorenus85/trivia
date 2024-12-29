@@ -2,10 +2,15 @@
 import Navigation from '@/components/Navigation.vue'
 import PageTitle from '@/components/PageTitle.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { pages, difficulties } from '../constants'
+import { pages, difficulties, translation } from '../constants'
 import SelectButton from '@/components/SelectButton.vue'
+import { computed } from 'vue'
 
 const triviaStore = useTriviaStore()
+
+const lang = computed(() => {
+  return triviaStore.selectedLanguage
+})
 
 function navBack() {
   triviaStore.setPage('START')
@@ -21,16 +26,20 @@ function handleSelectDifficulty(difficulty) {
 
 <template>
   <Navigation @click="navBack" />
-  <PageTitle :title="`Choose difficulty`" />
+  <PageTitle :title="translation[lang].chooseDifficulty" />
   <main class="pt-5">
     <div class="difficulties grid grid-cols-1 card gap-2">
       <SelectButton
         :key="difficulty.key"
         v-for="difficulty in difficulties"
-        :title="difficulty.title"
+        :title="translation[lang][difficulty.key]"
         :id="difficulty.key"
         @on-select="handleSelectDifficulty(difficulty)"
-        :hint="`Get ${difficulty.questions} questions, each with ${difficulty.time} seconds to answer.`"
+        :hint="
+          translation[lang].difficultyHint
+            .replace('[amount]', difficulty.questions)
+            .replace('[time]', difficulty.time)
+        "
         size="full"
       />
     </div>
