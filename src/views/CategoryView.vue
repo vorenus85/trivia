@@ -5,8 +5,8 @@ import { useTriviaStore } from '../stores/trivia'
 import { pages, categories } from '../constants'
 const triviaStore = useTriviaStore()
 
-function handleSelectCategory(categoryId) {
-  triviaStore.setCategory(categoryId)
+function handleSelectCategory(category) {
+  triviaStore.setCategory(category)
   triviaStore.setPage(pages.difficulty)
 }
 </script>
@@ -20,7 +20,7 @@ function handleSelectCategory(categoryId) {
         v-for="category in categories"
         :title="category.title"
         :id="category.key"
-        @on-select="handleSelectCategory"
+        @click="handleSelectCategory(category)"
       />
     </div>
   </main>

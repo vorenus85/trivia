@@ -66,6 +66,13 @@ const handleClick = () => {
   font-weight: 500;
   border-color: var(--accent-color);
   font-size: 0.875rem;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow:
+      0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
 
   &.small {
     font-size: 0.75rem;

@@ -7,6 +7,7 @@ export const useTriviaStore = defineStore('trivia', {
     timePerAnswer: 10,
     questionsAmount: 10,
     category: null,
+    categoryTitle: null,
     questions: [],
     answers: [],
     completionPercent: null,
@@ -18,6 +19,7 @@ export const useTriviaStore = defineStore('trivia', {
     selectedQuestionsAmount: (state) => state.questionsAmount,
     selectedTime: (state) => state.timePerAnswer,
     selectedCategory: (state) => state.category,
+    selectedCategoryTitle: (state) => state.categoryTitle,
     selectedDifficulty: (state) => state.difficulty,
     activePage: (state) => state.page,
     selectedQuestions: (state) => state.questions,
@@ -53,7 +55,8 @@ export const useTriviaStore = defineStore('trivia', {
       this.timePerAnswer = newValue
     },
     setCategory(category) {
-      this.category = category
+      this.category = category.key
+      this.categoryTitle = category.title
     },
     setPage(page) {
       this.page = page

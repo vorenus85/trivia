@@ -3,7 +3,8 @@
   <PageTitle :value="loading" :title="`${activeQuestion.question}`">
     <template #question>
       <div class="question-counter text-primary mb-2 text-center">
-        Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}
+        <strong>{{ triviaStore.categoryTitle }}</strong>
+        <div>Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}</div>
       </div>
     </template>
     <template #counter>
