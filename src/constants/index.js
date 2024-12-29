@@ -35,6 +35,6 @@ export const categories = [
   },
   {
     key: '14',
-    title: 'TV Series'
+    title: 'Film & TV'
   }
 ]

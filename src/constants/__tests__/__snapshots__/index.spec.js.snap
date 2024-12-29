@@ -24,7 +24,7 @@ exports[`Categories tests > quiz categories matches the array snapshot 1`] = `
   },
   {
     "key": "14",
-    "title": "TV Series",
+    "title": "Film & TV",
   },
 ]
 `;
