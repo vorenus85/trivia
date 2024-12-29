@@ -29,7 +29,7 @@ describe('useTriviaStore', () => {
   it('should correctly compute getters', () => {
     expect(triviaStore.selectedQuestionsAmount).toBe(10)
     expect(triviaStore.selectedTime).toBe(10)
-    expect(triviaStore.selectedCategory).toBeNull()
+    expect(triviaStore.selectedCategoryId).toBeNull()
     expect(triviaStore.selectedDifficulty).toBeNull()
     expect(triviaStore.activePage).toBe('START')
     expect(triviaStore.selectedQuestions).toEqual([])

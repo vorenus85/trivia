@@ -6,7 +6,8 @@ export const useTriviaStore = defineStore('trivia', {
     difficulty: null,
     timePerAnswer: 10,
     questionsAmount: 10,
-    category: null,
+    language: 'en',
+    categoryId: null,
     categoryTitle: null,
     questions: [],
     answers: [],
@@ -16,9 +17,10 @@ export const useTriviaStore = defineStore('trivia', {
     score: null
   }),
   getters: {
+    selectedLanguage: (state) => state.language,
     selectedQuestionsAmount: (state) => state.questionsAmount,
     selectedTime: (state) => state.timePerAnswer,
-    selectedCategory: (state) => state.category,
+    selectedCategoryId: (state) => state.categoryId,
     selectedCategoryTitle: (state) => state.categoryTitle,
     selectedDifficulty: (state) => state.difficulty,
     activePage: (state) => state.page,
@@ -32,6 +34,7 @@ export const useTriviaStore = defineStore('trivia', {
   actions: {
     initNewGame() {
       this.setQuestionsAmount(10)
+      this.setLanguage('en')
       this.clearAnswers()
       this.setTimePerAnswer(10)
       this.setCategory(null)
@@ -41,6 +44,9 @@ export const useTriviaStore = defineStore('trivia', {
       this.setCorrectAnswers(null)
       this.setWrongAnswers(null)
       this.setScore(null)
+    },
+    setLanguage(lang) {
+      this.language = lang
     },
     setQuestionsAmount(amount) {
       this.questionsAmount = amount
@@ -55,7 +61,7 @@ export const useTriviaStore = defineStore('trivia', {
       this.timePerAnswer = newValue
     },
     setCategory(category) {
-      this.category = category.key
+      this.categoryId = category.key
       this.categoryTitle = category.title
     },
     setPage(page) {

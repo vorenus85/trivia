@@ -2,7 +2,7 @@
   <Navigation @click="navBack" />
   <PageTitle :value="loading" :title="`${activeQuestion.question}`">
     <template #question>
-      <div class="question-counter text-primary mb-2 text-center">
+      <div class="question-counter text-primary mb-4 text-center">
         <strong>{{ triviaStore.categoryTitle }}</strong>
         <div>Question {{ activeQuestionIndex + 1 }}/{{ questionsAmount }}</div>
       </div>
@@ -58,11 +58,12 @@ let timeoutId = null // Variable to hold the timeout ID
 
 const fetchQuestions = async () => {
   loading.value = true
-  const category = triviaStore.selectedCategory
+  const language = triviaStore.selectedLanguage
+  const categoryId = triviaStore.selectedCategoryId
   const difficulty = triviaStore.selectedDifficulty
   const amount = questionsAmount.value
 
-  const cacheKey = `${triviaStore.selectedCategory}-${triviaStore.selectedDifficulty}`
+  const cacheKey = `${triviaStore.selectedCategoryId}-${triviaStore.selectedDifficulty}`
   const cachedQuestions = sessionStorage.getItem(cacheKey)
 
   if (cachedQuestions) {
@@ -73,16 +74,17 @@ const fetchQuestions = async () => {
   }
 
   try {
-    // https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple
     const apiUrl =
       import.meta.env.VITE_API_URL +
-      `?amount=${amount}&category=${category}&difficulty=${difficulty}&type=multiple`
+      `${language}/?amount=${amount}&categoryId=${categoryId}&difficulty=${difficulty}`
+    console.log(apiUrl)
     const response = await fetch(apiUrl)
     if (!response.ok) {
       throw new Error('Failed to load trivias')
     }
 
     const data = await response.json()
+    console.log(data)
     data.results.map((item) => {
       const answers = [item.correct_answer, ...item.incorrect_answers]
       return (item.answers = shuffleAnswers(answers))

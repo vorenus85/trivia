@@ -33,7 +33,7 @@ const triviaStore = useTriviaStore()
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .centered-content {
     overflow: visible;
     max-width: 750px;
