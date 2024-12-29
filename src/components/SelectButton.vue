@@ -64,7 +64,7 @@ const handleClick = () => {
 
 .select-button {
   font-weight: 500;
-  border-color: var(--accent-color);
+  border-color: var(--secondary-color);
   font-size: 0.875rem;
   transition: all 0.2s;
 
