@@ -5,16 +5,12 @@ import { useTriviaStore } from '@/stores/trivia'
 import { pages, difficulties, translation } from '../constants'
 import SelectButton from '@/components/SelectButton.vue'
 import { computed } from 'vue'
-
+const navTo = 'CATEGORY'
 const triviaStore = useTriviaStore()
 
 const lang = computed(() => {
   return triviaStore.selectedLanguage
 })
-
-function navBack() {
-  triviaStore.setPage('CATEGORY')
-}
 
 function handleSelectDifficulty(difficulty) {
   triviaStore.setDifficulty(difficulty.key)
@@ -25,7 +21,7 @@ function handleSelectDifficulty(difficulty) {
 </script>
 
 <template>
-  <Navigation @click="navBack" />
+  <Navigation :navTo="navTo" />
   <PageTitle :title="translation[lang].chooseDifficulty" />
   <main class="pt-5">
     <div class="difficulties grid grid-cols-1 card gap-2">

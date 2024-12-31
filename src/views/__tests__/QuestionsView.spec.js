@@ -60,7 +60,10 @@ describe('QuestionsView.vue', () => {
             props: ['title'],
             template: `<div>{{title}}</div>`
           },
-          SelectButton,
+          SelectButton: {
+            props: ['id', 'title'],
+            template: `<button @click="$emit('on-select', id)">{{ title }}</button>`
+          },
           CircleProgressBar: {
             template: '<div></div>'
           }

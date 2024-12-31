@@ -1,6 +1,6 @@
 <template>
   <div class="result-view">
-    <Navigation @click="navBack" />
+    <Navigation :navTo="navTo" />
     <PageTitle :title="translation[lang].detailedResult">
       <template #question> </template>
       <template #counter>
@@ -68,14 +68,11 @@ import { useTriviaStore } from '@/stores/trivia'
 import { translation } from '../constants'
 import { computed, ref } from 'vue'
 const triviaStore = useTriviaStore()
+const navTo = 'RESULT'
 const lang = computed(() => {
   return triviaStore.selectedLanguage
 })
 const colorUnfilled = ref('#6a5ae0')
-
-function navBack() {
-  triviaStore.setPage('RESULT')
-}
 
 const onNavToStart = function () {
   triviaStore.setPage('CATEGORY')

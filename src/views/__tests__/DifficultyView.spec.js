@@ -39,7 +39,10 @@ describe('DetailedResultView.vue', () => {
             props: ['title'],
             template: `<div>{{title}}</div>`
           },
-          SelectButton,
+          SelectButton: {
+            props: ['id', 'title', 'hint'],
+            template: `<button @click="$emit('on-select', id)">{{ title }}</button>`
+          },
           Navigation: {
             template: '<div></div>'
           }

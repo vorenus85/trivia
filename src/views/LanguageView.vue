@@ -3,10 +3,22 @@
   <main class="pt-5">
     <div class="languages grid grid-cols-2 card gap-8">
       <div class="language-item" @click="chooseLanguage('en')">
-        <img src="@/assets/img/svg/gb.svg" width="100" height="50" class="w-full" />
+        <img
+          src="@/assets/img/svg/gb.svg"
+          width="100"
+          height="50"
+          class="w-full"
+          alt="en lang flag"
+        />
       </div>
       <div class="language-item" @click="chooseLanguage('hu')">
-        <img src="@/assets/img/svg/hu.svg" width="100" height="50" class="w-full" />
+        <img
+          src="@/assets/img/svg/hu.svg"
+          width="100"
+          height="50"
+          class="w-full"
+          alt="hu lang flag"
+        />
       </div>
     </div>
     <div class="mt-5 card p-5"></div>
