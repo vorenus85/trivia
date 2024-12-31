@@ -7,7 +7,7 @@
         @click="navToStart"
       >
         <img src="@/assets/img/svg/iconPlayAgain.svg" width="45" height="45" class="" />
-        <small class="py-2">{{ translation[lang].playAgain }}</small>
+        <small class="py-2">{{ translation?.[lang]?.playAgain }}</small>
       </button>
     </div>
     <div class="col-6 px-0 flex justify-content-end" v-if="showViewAnswers">
@@ -17,7 +17,7 @@
         @click="navToDetailedResults"
       >
         <img src="@/assets/img/svg/iconReview.svg" width="45" height="45" class="" />
-        <small class="py-2">{{ translation[lang].viewAnswers }}</small>
+        <small class="py-2">{{ translation?.[lang]?.viewAnswers }}</small>
       </button>
     </div>
   </div>

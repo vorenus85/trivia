@@ -34,5 +34,8 @@ const chooseLanguage = (lang) => {
   display: flex;
   align-items: center;
   justify-content: center;
+  img {
+    max-width: 150px;
+  }
 }
 </style>

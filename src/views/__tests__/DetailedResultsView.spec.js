@@ -39,6 +39,6 @@ describe('DetailedResultView.vue', () => {
   it('renders PageTitle with the correct title', () => {
     const pageTitle = wrapper.findComponent(PageTitle)
     expect(pageTitle.exists()).toBe(true)
-    expect(pageTitle.props('title')).toBe('Detailed results')
+    expect(pageTitle.props('title')).toBe('Részletes eredmény')
   })
 })

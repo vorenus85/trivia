@@ -31,7 +31,7 @@ function navBack() {
         v-for="category in categories"
         :title="translation[lang][category.key]"
         :id="category.key"
-        @click="handleSelectCategory(category)"
+        @click="handleSelectCategory({ id: category.id, title: translation[lang][category.key] })"
       />
     </div>
   </main>

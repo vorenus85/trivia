@@ -3,39 +3,40 @@
 exports[`Categories tests > quiz categories matches the array snapshot 1`] = `
 [
   {
-    "key": "9",
-    "title": "General Knowledge",
+    "id": "9",
+    "key": "general",
   },
   {
-    "key": "27",
-    "title": "Animals",
+    "id": "27",
+    "key": "animals",
   },
   {
-    "key": "23",
-    "title": "History",
+    "id": "23",
+    "key": "history",
   },
   {
-    "key": "17",
-    "title": "Science & Nature",
+    "id": "17",
+    "key": "science",
   },
   {
-    "key": "21",
-    "title": "Sports",
+    "id": "21",
+    "key": "sports",
   },
   {
-    "key": "14",
-    "title": "Film & TV",
+    "id": "14",
+    "key": "filmsTv",
   },
 ]
 `;
 
 exports[`It should be correct page names > pages matches the array snapshot 1`] = `
 {
+  "category": "CATEGORY",
   "detailedResult": "DETAILED_RESULTS",
   "difficulty": "DIFFICULTY",
+  "language": "LANGUAGE",
   "questions": "QUESTIONS",
   "result": "RESULT",
-  "start": "START",
 }
 `;
 
@@ -45,19 +46,16 @@ exports[`difficulties > difficulties matches the array snapshot 1`] = `
     "key": "easy",
     "questions": 8,
     "time": 12,
-    "title": "Easy",
   },
   {
     "key": "medium",
     "questions": 10,
     "time": 10,
-    "title": "Medium",
   },
   {
     "key": "hard",
     "questions": 12,
     "time": 8,
-    "title": "Hard",
   },
 ]
 `;

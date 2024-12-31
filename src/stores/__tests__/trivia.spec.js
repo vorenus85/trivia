@@ -12,11 +12,11 @@ describe('useTriviaStore', () => {
 
   // Test initial state
   it('should have the correct initial state', () => {
-    expect(triviaStore.page).toBe('START')
+    expect(triviaStore.page).toBe('LANGUAGE')
     expect(triviaStore.difficulty).toBeNull()
     expect(triviaStore.timePerAnswer).toBe(10)
     expect(triviaStore.questionsAmount).toBe(10)
-    expect(triviaStore.category).toBeNull()
+    expect(triviaStore.categoryId).toBeNull()
     expect(triviaStore.questions).toEqual([])
     expect(triviaStore.answers).toEqual([])
     expect(triviaStore.completionPercent).toBeNull()
@@ -31,7 +31,7 @@ describe('useTriviaStore', () => {
     expect(triviaStore.selectedTime).toBe(10)
     expect(triviaStore.selectedCategoryId).toBeNull()
     expect(triviaStore.selectedDifficulty).toBeNull()
-    expect(triviaStore.activePage).toBe('START')
+    expect(triviaStore.activePage).toBe('LANGUAGE')
     expect(triviaStore.selectedQuestions).toEqual([])
     expect(triviaStore.getAnswers).toEqual([])
   })
@@ -60,8 +60,11 @@ describe('useTriviaStore', () => {
   })
 
   it('should update category', () => {
-    triviaStore.setCategory('History')
-    expect(triviaStore.category).toBe('History')
+    triviaStore.setCategory({
+      title: 'History',
+      id: '23'
+    })
+    expect(triviaStore.categoryId).toBe('23')
   })
 
   it('should update page', () => {
@@ -76,7 +79,7 @@ describe('useTriviaStore', () => {
     expect(triviaStore.questionsAmount).toBe(10)
     expect(triviaStore.answers).toEqual([])
     expect(triviaStore.timePerAnswer).toBe(10)
-    expect(triviaStore.category).toBeNull()
+    expect(triviaStore.categoryId).toBeNull()
     expect(triviaStore.questions).toEqual([])
     expect(triviaStore.difficulty).toBeNull()
     expect(triviaStore.completionPercent).toBeNull()

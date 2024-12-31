@@ -1,10 +1,23 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createPinia, setActivePinia } from 'pinia'
-import { difficulties } from '@/constants'
 import DifficultyView from '@/views/DifficultyView.vue'
 import PageTitle from '@/components/PageTitle.vue'
 import SelectButton from '@/components/SelectButton.vue'
+
+const difficulties = [
+  {
+    key: 'easy',
+    title: 'Könnyű',
+    hint: '8 kérdést kapsz amikre 12 másodperc időd lesz válaszolni'
+  },
+  {
+    key: 'medium',
+    title: 'Közepes',
+    hint: '10 kérdést kapsz amikre 10 másodperc időd lesz válaszolni'
+  },
+  { key: 'hard', title: 'Nehéz', hint: '12 kérdést kapsz amikre 8 másodperc időd lesz válaszolni' }
+]
 
 // Set up mocked store
 const mockStore = {}
@@ -39,7 +52,7 @@ describe('DetailedResultView.vue', () => {
   it('renders PageTitle with the correct title', () => {
     const pageTitle = wrapper.findComponent(PageTitle)
     expect(pageTitle.exists()).toBe(true)
-    expect(pageTitle.props('title')).toBe('Choose difficulty')
+    expect(pageTitle.props('title')).toBe('Válassz nehézséget.')
   })
 
   it('renders a SelectButton for each difficulty', () => {
@@ -48,9 +61,7 @@ describe('DetailedResultView.vue', () => {
     difficulties.forEach((difficulty, index) => {
       expect(buttons[index].props('id')).toBe(difficulty.key)
       expect(buttons[index].props('title')).toBe(difficulty.title)
-      expect(buttons[index].props('hint')).toBe(
-        `Get ${difficulty.questions} questions, each with ${difficulty.time} seconds to answer.`
-      )
+      expect(buttons[index].props('hint')).toBe(difficulty.hint)
     })
   })
 })

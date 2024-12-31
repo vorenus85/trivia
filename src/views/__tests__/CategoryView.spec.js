@@ -26,10 +26,12 @@ describe('CategoryView.vue', () => {
     wrapper = mount(CategoryView, {
       global: {
         stubs: {
-          PageTitle,
+          PageTitle: {
+            props: ['title']
+          },
           // Stub SelectButton to emit `on-select` when clicked
           SelectButton: {
-            props: ['title', 'id'],
+            props: ['id'],
             template: `<button @click="$emit('on-select', id)">{{ title }}</button>`
           }
         }
@@ -44,7 +46,7 @@ describe('CategoryView.vue', () => {
   it('renders PageTitle with the correct title', () => {
     const pageTitle = wrapper.findComponent(PageTitle)
     expect(pageTitle.exists()).toBe(true)
-    expect(pageTitle.props('title')).toBe('Choose category')
+    expect(pageTitle.props('title')).toBe('Válassz kategóriát.')
   })
 
   it('renders a SelectButton for each category', () => {
@@ -52,7 +54,6 @@ describe('CategoryView.vue', () => {
     expect(buttons.length).toBe(categories.length)
     categories.forEach((category, index) => {
       expect(buttons[index].props('id')).toBe(category.key)
-      expect(buttons[index].props('title')).toBe(category.title)
     })
   })
 

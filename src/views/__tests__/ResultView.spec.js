@@ -47,7 +47,7 @@ describe('ResultView.vue', () => {
   it('renders PageTitle with the correct title', () => {
     const pageTitle = wrapper.findComponent(PageTitle)
     expect(pageTitle.exists()).toBe(true)
-    expect(pageTitle.props('title')).toBe('Your Score')
+    expect(pageTitle.props('title')).toBe('Pontszám')
   })
 
   it('renders ResultItem components with correct props', () => {
@@ -56,22 +56,22 @@ describe('ResultView.vue', () => {
 
     expect(resultItems[0].props()).toMatchObject({
       value: '100%', // Completion percentage
-      title: 'Completion',
+      title: 'Teljesítmény',
       color: 'primary'
     })
     expect(resultItems[1].props()).toMatchObject({
       value: 10, // Total questions
-      title: 'Total Question',
+      title: 'Összes kérdés',
       color: 'primary'
     })
     expect(resultItems[2].props()).toMatchObject({
       value: 0, // Correct answers
-      title: 'Correct',
+      title: 'Helyes',
       color: 'success'
     })
     expect(resultItems[3].props()).toMatchObject({
       value: 10, // Wrong answers
-      title: 'Wrong',
+      title: 'Rossz',
       color: 'danger'
     })
   })

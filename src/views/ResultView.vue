@@ -100,7 +100,6 @@ onMounted(() => {
   // remove completed trivia from sessionStorage
   const completedTrivia =
     triviaStore.categoryId + '-' + triviaStore.language + '-' + triviaStore.difficulty
-  console.log(completedTrivia)
   sessionStorage.removeItem(completedTrivia)
 })
 </script>

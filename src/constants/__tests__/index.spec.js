@@ -4,7 +4,8 @@ import { pages, difficulties, categories } from '../index.js'
 describe('It should be correct page names', () => {
   test.each`
     name                | value
-    ${'start'}          | ${'START'}
+    ${'language'}       | ${'LANGUAGE'}
+    ${'category'}       | ${'CATEGORY'}
     ${'difficulty'}     | ${'DIFFICULTY'}
     ${'questions'}      | ${'QUESTIONS'}
     ${'result'}         | ${'RESULT'}
@@ -27,15 +28,14 @@ describe('difficulties', () => {
 
   test('should have correct properties for each difficulty level', () => {
     const expectedDifficulties = [
-      { key: 'easy', title: 'Easy', questions: 8, time: 12 },
-      { key: 'medium', title: 'Medium', questions: 10, time: 10 },
-      { key: 'hard', title: 'Hard', questions: 12, time: 8 }
+      { key: 'easy', questions: 8, time: 12 },
+      { key: 'medium', questions: 10, time: 10 },
+      { key: 'hard', questions: 12, time: 8 }
     ]
 
     expectedDifficulties.forEach((expected, index) => {
       const difficulty = difficulties[index]
       expect(difficulty.key).toBe(expected.key)
-      expect(difficulty.title).toBe(expected.title)
       expect(difficulty.questions).toBe(expected.questions)
       expect(difficulty.time).toBe(expected.time)
     })

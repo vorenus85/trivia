@@ -60,8 +60,8 @@ export const useTriviaStore = defineStore('trivia', {
       this.timePerAnswer = newValue
     },
     setCategory(category) {
-      this.categoryId = category?.id
-      this.categoryTitle = category?.title
+      this.categoryId = category?.id ? category?.id : null
+      this.categoryTitle = category?.title ? category?.title : null
     },
     setPage(page) {
       this.page = page

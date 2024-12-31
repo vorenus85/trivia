@@ -73,7 +73,7 @@ describe('DetailedResultItem.vue', () => {
   // Test correct class application based on `isCorrect` and `givenAnswer`
   it('applies correct styling when the answer is correct', () => {
     const accordion = wrapper.find('.accordion')
-    expect(accordion.classes()).toContain('bg-green-100')
+    expect(accordion.classes()).toContain('bg-green-50')
   })
   /*
   it('applies incorrect styling when the answer is wrong', async () => {

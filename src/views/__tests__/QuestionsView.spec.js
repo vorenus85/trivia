@@ -4,6 +4,7 @@ import { createPinia, setActivePinia } from 'pinia'
 import { useTriviaStore } from '@/stores/trivia'
 import Navigation from '@/components/Navigation.vue'
 import PageTitle from '@/components/PageTitle.vue'
+import { createTestingPinia } from '@pinia/testing'
 import SelectButton from '@/components/SelectButton.vue'
 import CircleProgressBar from 'circle-progress.vue'
 import QuestionsView from '@/views/QuestionsView.vue'
@@ -19,6 +20,7 @@ describe('QuestionsView.vue', () => {
   beforeEach(() => {
     // Mock Trivia Store
     mockStore = {
+      selectedLanguage: 'en',
       selectedCategory: '14',
       selectedDifficulty: 'easy',
       selectedQuestionsAmount: 10,
