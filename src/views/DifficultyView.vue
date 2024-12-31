@@ -13,7 +13,7 @@ const lang = computed(() => {
 })
 
 function navBack() {
-  triviaStore.setPage('START')
+  triviaStore.setPage('CATEGORY')
 }
 
 function handleSelectDifficulty(difficulty) {
@@ -44,4 +44,5 @@ function handleSelectDifficulty(difficulty) {
       />
     </div>
   </main>
+  <div class="mt-5 card p-5"></div>
 </template>

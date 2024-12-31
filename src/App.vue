@@ -7,6 +7,7 @@ import DifficultyView from './views/DifficultyView.vue'
 import QuestionsView from './views/QuestionsView.vue'
 import ResultView from './views/ResultView.vue'
 import DetailedResultsView from './views/DetailedResultsView.vue'
+import LanguageView from './views/LanguageView.vue'
 const triviaStore = useTriviaStore()
 </script>
 
@@ -15,7 +16,8 @@ const triviaStore = useTriviaStore()
     <Logo />
     <Header />
     <div class="ml-auto mr-auto p-2 content w-full">
-      <CategoryView v-if="triviaStore.activePage === 'START'" />
+      <LanguageView v-if="triviaStore.activePage === 'LANGUAGE'" />
+      <CategoryView v-if="triviaStore.activePage === 'CATEGORY'" />
       <DifficultyView v-if="triviaStore.activePage === 'DIFFICULTY'" />
       <QuestionsView v-if="triviaStore.activePage === 'QUESTIONS'" />
       <ResultView v-if="triviaStore.activePage === 'RESULT'" />

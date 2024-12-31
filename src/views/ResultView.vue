@@ -1,6 +1,6 @@
 <template>
   <div class="result-view">
-    <PageTitle title="Your Score">
+    <PageTitle :title="translation[lang].yourScore">
       <template #counter>
         <CircleProgressBar
           :value="correctAnswers"
@@ -19,10 +19,18 @@
     </PageTitle>
     <main class="pt-5">
       <div class="results grid grid-cols-2 card gap-2">
-        <ResultItem :value="completedAnswers + `%`" title="Completion" color="primary" />
-        <ResultItem :value="totalQuestions" title="Total Question" color="primary" />
-        <ResultItem :value="correctAnswers" title="Correct" color="success" />
-        <ResultItem :value="wrongAnswers" title="Wrong" color="danger" />
+        <ResultItem
+          :value="completedAnswers + `%`"
+          :title="translation[lang].completion"
+          color="primary"
+        />
+        <ResultItem
+          :value="totalQuestions"
+          :title="translation[lang].totalQuestion"
+          color="primary"
+        />
+        <ResultItem :value="correctAnswers" :title="translation[lang].correct" color="success" />
+        <ResultItem :value="wrongAnswers" :title="translation[lang].wrong" color="danger" />
       </div>
       <ResultActions @navToStart="onNavToStart" @navToDetailedResults="onNavToDetailedResults" />
     </main>
@@ -35,8 +43,14 @@ import { useTriviaStore } from '@/stores/trivia'
 import { computed, onMounted, ref } from 'vue'
 import ResultItem from '@/components/ResultItem.vue'
 import ResultActions from '@/components/ResultActions.vue'
+import { translation } from '../constants'
+
 const colorUnfilled = ref('#6a5ae0')
 const triviaStore = useTriviaStore()
+
+const lang = computed(() => {
+  return triviaStore.selectedLanguage
+})
 
 const completedAnswers = computed(() => {
   const emptyAnswers = triviaStore.answers.filter((item) => item === '')
@@ -74,7 +88,7 @@ const score = computed(() => {
 })
 
 const onNavToStart = function () {
-  triviaStore.setPage('START')
+  triviaStore.setPage('CATEGORY')
   triviaStore.initNewGame()
 }
 
@@ -84,7 +98,9 @@ const onNavToDetailedResults = function () {
 
 onMounted(() => {
   // remove completed trivia from sessionStorage
-  const completedTrivia = triviaStore.category + '-' + triviaStore.difficulty
+  const completedTrivia =
+    triviaStore.categoryId + '-' + triviaStore.language + '-' + triviaStore.difficulty
+  console.log(completedTrivia)
   sessionStorage.removeItem(completedTrivia)
 })
 </script>

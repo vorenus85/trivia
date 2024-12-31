@@ -1,5 +1,6 @@
 export const pages = {
-  start: 'START',
+  language: 'LANGUAGE',
+  category: 'CATEGORY',
   difficulty: 'DIFFICULTY',
   questions: 'QUESTIONS',
   result: 'RESULT',
@@ -7,18 +8,19 @@ export const pages = {
 }
 
 export const difficulties = [
-  { key: 'easy', questions: 8, time: 100 },
-  { key: 'medium', questions: 10, time: 100 },
-  { key: 'hard', questions: 12, time: 100 }
+  { key: 'easy', questions: 8, time: 12 },
+  { key: 'medium', questions: 10, time: 10 },
+  { key: 'hard', questions: 12, time: 8 }
 ]
 
 export const translation = {
   hu: {
-    chooseCategory: 'Válassz kategóriát',
-    chooseDifficulty: 'Válassz nehézséget',
+    chooseLanguage: 'Üdv a Tríviában kérlek válassz nyelvet.',
+    chooseCategory: 'Válassz kategóriát.',
+    chooseDifficulty: 'Válassz nehézséget.',
     difficultyHint: '[amount] kérdést kapsz amikre [time] másodperc időd lesz válaszolni',
     question: 'Kérdés',
-    easy: 'Könnyú',
+    easy: 'Könnyű',
     medium: 'Közepes',
     hard: 'Nehéz',
     general: 'Általános tudás',
@@ -27,11 +29,19 @@ export const translation = {
     science: 'Tudomány és természet',
     sports: 'Sportok',
     filmsTv: 'Filmek és sorozatok',
-    yourScore: ''
+    yourScore: 'Pontszám',
+    completion: 'Teljesítmény',
+    totalQuestion: 'Összes kérdés',
+    correct: 'Helyes',
+    wrong: 'Rossz',
+    playAgain: 'Új játék',
+    viewAnswers: 'Válaszok',
+    detailedResult: 'Részletes eredmény'
   },
   en: {
-    chooseCategory: 'Choose category',
-    chooseDifficulty: 'Choose difficulty',
+    chooseLanguage: 'Hello in Trivia please choose language.',
+    chooseCategory: 'Choose category.',
+    chooseDifficulty: 'Choose difficulty.',
     difficultyHint: 'Get [amount] questions, each with [time] seconds to answer.',
     question: 'Question',
     easy: 'Easy',
@@ -42,7 +52,15 @@ export const translation = {
     history: 'History',
     science: 'Science & Nature',
     sports: 'Sports',
-    filmsTv: 'Film & TV'
+    filmsTv: 'Film & TV',
+    yourScore: 'Your score',
+    completion: 'Completion',
+    totalQuestion: 'Total question',
+    correct: 'Correct',
+    wrong: 'Wrong',
+    playAgain: 'Play again',
+    viewAnswers: 'View Answers',
+    detailedResult: 'Detailed Results'
   }
 }
 

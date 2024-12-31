@@ -1,11 +1,11 @@
 <template>
   <div
-    class="accordion mb-5 p-2 rounded-lg"
+    class="accordion mb-5 p-3 rounded-lg"
     :class="[
       { opened: isOpen },
-      { 'bg-red-100': !isCorrect && givenAnswer?.length },
+      { 'bg-red-50': !isCorrect && givenAnswer?.length },
       { 'bg-stone-100': !isCorrect && !givenAnswer?.length },
-      { 'bg-green-100': isCorrect }
+      { 'bg-green-50': isCorrect }
     ]"
     @click="toggle"
   >
@@ -15,10 +15,7 @@
       height="24"
       class="my-auto ml-2 accordion-arrow"
     />
-    <div
-      class="accordion-title text-sm font-medium pt-2 pb-2 pr-5"
-      v-html="question.question"
-    ></div>
+    <div class="accordion-title font-medium pt-2 pb-2 pr-5" v-html="question.question"></div>
     <div class="accordion-content grid grid-cols-2 gap-2">
       <SelectButton
         v-for="answer in question.answers"
@@ -68,6 +65,10 @@ function toggle() {
   max-height: 0;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+}
+
+.accordion-title {
+  font-size: 13px;
 }
 
 .accordion.opened .accordion-content {

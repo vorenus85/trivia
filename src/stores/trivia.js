@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useTriviaStore = defineStore('trivia', {
   state: () => ({
-    page: 'START',
+    page: 'LANGUAGE',
     difficulty: null,
     timePerAnswer: 10,
     questionsAmount: 10,
@@ -34,7 +34,6 @@ export const useTriviaStore = defineStore('trivia', {
   actions: {
     initNewGame() {
       this.setQuestionsAmount(10)
-      this.setLanguage('en')
       this.clearAnswers()
       this.setTimePerAnswer(10)
       this.setCategory(null)
@@ -61,8 +60,8 @@ export const useTriviaStore = defineStore('trivia', {
       this.timePerAnswer = newValue
     },
     setCategory(category) {
-      this.categoryId = category.id
-      this.categoryTitle = category.title
+      this.categoryId = category?.id
+      this.categoryTitle = category?.title
     },
     setPage(page) {
       this.page = page

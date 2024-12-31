@@ -37,6 +37,7 @@
       />
     </div>
   </main>
+  <div class="mt-5 card p-5"></div>
 </template>
 <script setup>
 import { CircleProgressBar } from 'circle-progress.vue'
@@ -69,7 +70,7 @@ const fetchQuestions = async () => {
   const difficulty = triviaStore.selectedDifficulty
   const amount = questionsAmount.value
 
-  const cacheKey = `${triviaStore.selectedCategoryId}-${triviaStore.selectedDifficulty}`
+  const cacheKey = `${categoryId}-${language}-${difficulty}`
   const cachedQuestions = sessionStorage.getItem(cacheKey)
 
   if (cachedQuestions) {
@@ -90,7 +91,6 @@ const fetchQuestions = async () => {
     }
 
     const data = await response.json()
-    console.log(data)
     data.results.map((item) => {
       const answers = [item.correct_answer, ...item.incorrect_answers]
       return (item.answers = shuffleAnswers(answers))

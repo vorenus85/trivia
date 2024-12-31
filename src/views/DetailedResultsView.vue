@@ -1,7 +1,7 @@
 <template>
   <div class="result-view">
     <Navigation @click="navBack" />
-    <PageTitle :title="`Detailed results`">
+    <PageTitle :title="translation[lang].detailedResult">
       <template #question> </template>
       <template #counter>
         <CircleProgressBar
@@ -26,12 +26,24 @@
       <div class="results grid grid-cols-2 card gap-2 mb-5">
         <ResultItem
           :value="triviaStore.completionPercent + `%`"
-          title="Completion"
+          :title="translation[lang].completion"
           color="primary"
         />
-        <ResultItem :value="triviaStore.questionsAmount" title="Total Question" color="primary" />
-        <ResultItem :value="triviaStore.correctAnswers" title="Correct" color="success" />
-        <ResultItem :value="triviaStore.wrongAnswers" title="Wrong" color="danger" />
+        <ResultItem
+          :value="triviaStore.questionsAmount"
+          :title="translation[lang].totalQuestion"
+          color="primary"
+        />
+        <ResultItem
+          :value="triviaStore.correctAnswers"
+          :title="translation[lang].correct"
+          color="success"
+        />
+        <ResultItem
+          :value="triviaStore.wrongAnswers"
+          :title="translation[lang].wrong"
+          color="danger"
+        />
       </div>
       <div class="detailed-results card">
         <DetailedResultItem
@@ -41,7 +53,7 @@
           :index="index"
         />
       </div>
-      <ResultActions :showViewAnswers="false" @navToStart="onNavToStart" />
+      <ResultActions :showViewAnswers="false" @navToStart="onNavToStart" class="mb-5" />
     </main>
   </div>
 </template>
@@ -53,8 +65,12 @@ import PageTitle from '@/components/PageTitle.vue'
 import ResultActions from '@/components/ResultActions.vue'
 import ResultItem from '@/components/ResultItem.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { ref } from 'vue'
+import { translation } from '../constants'
+import { computed, ref } from 'vue'
 const triviaStore = useTriviaStore()
+const lang = computed(() => {
+  return triviaStore.selectedLanguage
+})
 const colorUnfilled = ref('#6a5ae0')
 
 function navBack() {
@@ -62,7 +78,7 @@ function navBack() {
 }
 
 const onNavToStart = function () {
-  triviaStore.setPage('START')
+  triviaStore.setPage('CATEGORY')
   triviaStore.initNewGame()
 }
 </script>
@@ -72,6 +88,10 @@ const onNavToStart = function () {
   height: 120px;
   top: -90px;
   left: calc(50% - 60px);
+}
+
+.detailed-results {
+  padding: 0.75rem;
 }
 
 .progress {
