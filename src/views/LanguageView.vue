@@ -15,7 +15,7 @@
 <script setup>
 import PageTitle from '@/components/PageTitle.vue'
 import { useTriviaStore } from '@/stores/trivia'
-import { pages, difficulties, translation } from '../constants'
+import { translation } from '../constants'
 import { computed } from 'vue'
 
 const triviaStore = useTriviaStore()

@@ -27,7 +27,10 @@ describe('ResultView.vue', () => {
     wrapper = mount(ResultView, {
       global: {
         stubs: {
-          PageTitle,
+          PageTitle: {
+            props: ['title'],
+            template: `<div>{{title}}</div>`
+          },
           SelectButton,
           Navigation: {
             template: '<div></div>'

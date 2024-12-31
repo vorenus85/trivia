@@ -11,7 +11,10 @@ defineProps({
     type: String,
     default: ''
   },
-  value: Boolean
+  value: {
+    type: Boolean,
+    default: false
+  }
 })
 </script>
 <style scoped lang="scss">

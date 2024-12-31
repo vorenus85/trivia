@@ -1,10 +1,43 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createPinia, setActivePinia } from 'pinia'
-import { categories } from '@/constants'
+// import { categories } from '@/constants'
 import PageTitle from '@/components/PageTitle.vue'
 import SelectButton from '@/components/SelectButton.vue'
 import CategoryView from '@/views/CategoryView.vue'
+
+const categories = [
+  {
+    key: 'general',
+    id: '9',
+    title: 'Általános tudás'
+  },
+  {
+    key: 'animals',
+    id: '27',
+    title: 'Állatok'
+  },
+  {
+    key: 'history',
+    id: '23',
+    title: 'Történelem'
+  },
+  {
+    key: 'science',
+    id: '17',
+    title: 'Tudomány és természet'
+  },
+  {
+    key: 'sports',
+    id: '21',
+    title: 'Sport'
+  },
+  {
+    key: 'filmsTv',
+    id: '14',
+    title: 'Filmek és Sorozatok'
+  }
+]
 
 // Set up mocked store
 const mockStore = {
@@ -27,11 +60,12 @@ describe('CategoryView.vue', () => {
       global: {
         stubs: {
           PageTitle: {
-            props: ['title']
+            props: ['title'],
+            template: `<div>{{title}}</div>`
           },
           // Stub SelectButton to emit `on-select` when clicked
           SelectButton: {
-            props: ['id'],
+            props: ['id', 'title'],
             template: `<button @click="$emit('on-select', id)">{{ title }}</button>`
           }
         }

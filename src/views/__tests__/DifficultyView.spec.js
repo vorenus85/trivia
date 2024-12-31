@@ -35,7 +35,10 @@ describe('DetailedResultView.vue', () => {
     wrapper = mount(DifficultyView, {
       global: {
         stubs: {
-          PageTitle,
+          PageTitle: {
+            props: ['title'],
+            template: `<div>{{title}}</div>`
+          },
           SelectButton,
           Navigation: {
             template: '<div></div>'
