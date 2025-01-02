@@ -1,11 +1,11 @@
 # Trivia App
 
-A fun and interactive trivia application that challenges your knowledge across multiple categories, powered by the Open Trivia Database API.
+A fun and interactive trivia application that challenges your knowledge across multiple categories, powered by custom Node.js API.
 
 ## Features
 
-- Multiple categories, including TV Series, Gastronomy, History, Science, and Sports.
-- Dynamically fetched questions per category with 4 answer options each from [Open Trivia Database](https://opentdb.com/).
+- Multiple categories, including TV Series, History, Science, and Sports.
+- Dynamically fetched questions per category with 4 answer options each from Node.js API.
 - Fully responsive and styled with [Tailwind CSS](https://tailwindcss.com/).
 - Smooth and fast performance using [Vue 3](https://vuejs.org/) and [Vite](https://vite.dev/).
 
@@ -15,7 +15,6 @@ A fun and interactive trivia application that challenges your knowledge across m
 - **Vite** (Build tool)
 - **Pinia** (State Management)
 - **Tailwind** CSS (Styling)
-- **Open Trivia Database API** (Question source)
 
 1. Clone the repository:
 
@@ -41,10 +40,6 @@ npm run dev
 ```sh
 npm run build
 ```
-
-## API Integration
-
-The app fetches trivia questions from the **Open Trivia Database API**. Ensure you have internet access to retrieve questions dynamically.
 
 ## License
 
