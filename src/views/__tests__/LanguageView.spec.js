@@ -5,11 +5,19 @@ import PageTitle from '@/components/PageTitle.vue'
 import { createTestingPinia } from '@pinia/testing'
 import { useTriviaStore } from '@/stores/trivia'
 
+// Set up mocked store
+const mockStore = {
+  setLanguage: vi.fn(),
+  setPage: vi.fn()
+}
+vi.doMock('@/stores/trivia', () => ({
+  useTriviaStore: () => mockStore
+}))
+
 describe('LanguageSelection.vue', () => {
   it('renders correctly with title and language options', () => {
     const wrapper = mount(LanguageView, {
       global: {
-        plugins: [createTestingPinia()],
         stubs: {
           PageTitle: {
             props: ['title'],
@@ -25,8 +33,6 @@ describe('LanguageSelection.vue', () => {
   })
 
   it('calls chooseLanguage when English is clicked', async () => {
-    const mockSetLanguage = vi.fn()
-    const mockSetPage = vi.fn()
     const wrapper = mount(LanguageView, {
       global: {
         plugins: [
