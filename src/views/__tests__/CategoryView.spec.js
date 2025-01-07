@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createPinia, setActivePinia } from 'pinia'
-// import { categories } from '@/constants'
 import PageTitle from '@/components/PageTitle.vue'
 import SelectButton from '@/components/SelectButton.vue'
 import CategoryView from '@/views/CategoryView.vue'
