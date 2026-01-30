@@ -83,7 +83,7 @@ const fetchQuestions = async () => {
   try {
     const apiUrl =
       import.meta.env.VITE_API_URL +
-      `${language}/?amount=${amount}&categoryId=${categoryId}&difficulty=${difficulty}`
+      `/api/questions/${language}/?amount=${amount}&categoryId=${categoryId}&difficulty=${difficulty}`
     const response = await fetch(apiUrl)
     if (!response.ok) {
       throw new Error('Failed to load trivias')
