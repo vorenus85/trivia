@@ -6,7 +6,7 @@ export const useTriviaStore = defineStore('trivia', {
     difficulty: null,
     timePerAnswer: 10,
     questionsAmount: 10,
-    language: 'hu',
+    language: 'en',
     categoryId: null,
     categoryTitle: null,
     questions: [],

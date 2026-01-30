@@ -41,6 +41,12 @@ npm run dev
 npm run build
 ```
 
+5. Deploy to Gh-pages
+
+```sh
+npm run deploy
+```
+
 ## License
 
 MIT License
