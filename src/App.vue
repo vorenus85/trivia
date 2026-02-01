@@ -8,6 +8,7 @@ import QuestionsView from './views/QuestionsView.vue'
 import ResultView from './views/ResultView.vue'
 import DetailedResultsView from './views/DetailedResultsView.vue'
 import LanguageView from './views/LanguageView.vue'
+import ProjectCredits from './components/ProjectCredits.vue'
 const triviaStore = useTriviaStore()
 </script>
 
@@ -22,6 +23,7 @@ const triviaStore = useTriviaStore()
       <QuestionsView v-if="triviaStore.activePage === 'QUESTIONS'" />
       <ResultView v-if="triviaStore.activePage === 'RESULT'" />
       <DetailedResultsView v-if="triviaStore.activePage === 'DETAILED_RESULTS'" />
+      <ProjectCredits />
     </div>
   </div>
 </template>
