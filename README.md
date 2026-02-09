@@ -1,6 +1,6 @@
 # Trivia App
 
-A fun and interactive trivia application that challenges your knowledge across multiple categories, powered by custom Node.js API.
+A fun and interactive trivia application that challenges your knowledge across multiple categories, powered by a custom Node.js API. Users can test themselves in categories like TV Series, History, Science, and Sports, with dynamically fetched questions offering 4 possible answers each. Fully responsive and styled with Tailwind CSS, the app delivers smooth performance using Vue 3, Vite, and Pinia for state management.
 
 ## Features
 
